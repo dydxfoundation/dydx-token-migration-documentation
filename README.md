@@ -10,7 +10,7 @@ The dYdX ecosystem is rapidly approaching the potential mainnet release of the [
 
 The dYdX community could elect to use Ethereum-based [DYDX](https://etherscan.io/token/0x92D6C1e31e14520e676a687F0a93788B716BEff5), the governance token of dYdX v3, as the L1 token of the dYdX Chain (if and when deployed after the mainnet release). If such an election were to materialize, given that DYDX is an Ethereum-based ERC-20 token, the DYDX token would need to be migrated from Ethereum to the dYdX Chain.
 
-On August 2, 2023, the dYdX Foundation published [Exploring the Future of DYDX: A Take on the Potential Migration of DYDX from Ethereum to the dYdX Chain](https://dydx.foundation/blog/exploring-the-future-of-dydx) ("Exploring the Future of DYDX"), and on September 12, 2023, the dYdX Foundation published an [Update to Exploring the Future of DYDX](https://dydx.foundation/blog/update-on-exploring-the-future-of-dydx).
+On August 2, 2023, the dYdX Foundation published [Exploring the Future of DYDX: A Take on the Potential Migration of DYDX from Ethereum to the dYdX Chain](https://dydx.foundation/blog/exploring-the-future-of-dydx) ("Exploring the Future of DYDX"), and on September 12, 2023, the dYdX Foundation published an [Update on the Potential Migration of DYDX from Ethereum to the dYdX Chain](https://dydx.foundation/blog/update-on-exploring-the-future-of-dydx).
 
 In those posts, the dYdX Foundation presented that in furtherance of its mission to support and promote the dYdX ecosystem by enabling communities, developers, and decentralized governance, the dYdX Foundation commissioned:
 

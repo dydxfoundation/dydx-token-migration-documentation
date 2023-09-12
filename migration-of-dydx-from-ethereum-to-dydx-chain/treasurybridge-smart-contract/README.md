@@ -8,7 +8,7 @@ description: Overview of the TreasuryBridge Smart Contract
 
 ## **TreasuryBridge Contract**
 
-Since the [`TreasuryVester Smart Contract`](https://github.com/dydxfoundation/governance-contracts/tree/master/contracts/treasury) is immutable, an updated [`Treasury Smart Contract`](https://github.com/dydxfoundation/governance-contracts/blob/master/contracts/treasury/Treasury.sol), `TreasuryBridge Smart Contract` was developed. The `TreasuryBridge Smart Contract,` if deployed and if the dYdX community decided through dYdX governance, could -
+Since the [`TreasuryVester Smart Contract`](https://github.com/dydxfoundation/governance-contracts/blob/master/contracts/treasury/TreasuryVester.sol) is immutable, an updated [`Treasury Smart Contract`](https://github.com/dydxfoundation/governance-contracts/blob/master/contracts/treasury/Treasury.sol), `TreasuryBridge Smart Contract` was developed. The `TreasuryBridge Smart Contract,` if deployed and if the dYdX community decided through dYdX governance, could -
 
 * **One time**: reject new vesting from the `TreasuryVester Smart Contract` by calling the `setRecipient` function on this contract to set the recipient to a burn address, and
 * **Ongoing Basis**: allow governance to bridge any amount of existing tokens in the community treasury or the rewards treasury (the current `Treasury Smart Contract` only allows `transfer()` and `approve()`).
