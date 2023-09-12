@@ -4,7 +4,7 @@ description: An overview of legal disclaimers.
 
 # Legal Disclaimers
 
-<figure><img src=".gitbook/assets/Legal Disclaimers.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Legal Disclaimers.png" alt=""><figcaption></figcaption></figure>
 
 dYdX Foundation’s purpose is to support the current implementation and any future implementations of the dYdX protocol and to foster community-driven growth in the dYdX ecosystem.&#x20;
 

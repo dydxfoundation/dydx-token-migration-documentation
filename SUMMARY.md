@@ -1,7 +1,9 @@
 # Table of contents
 
+## START HERE
+
 * [Introduction](README.md)
-* [Legal Disclaimers](legal-disclaimers.md)
+* [Legal Disclaimers](start-here/legal-disclaimers.md)
 
 ## Migration of DYDX from Ethereum to dYdX Chain
 
