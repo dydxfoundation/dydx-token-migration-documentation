@@ -97,7 +97,7 @@ The description of each field in the log is as follows:
 * `amount` is the amount of `ethDYDX`tokens that was transferred.
 * `from` is the Ethereum address the `ethDYDX` tokens were transferred from.
 * `accAddress` is the address to which the <mark style="color:purple;">**L1 token of the dYdX Chain**</mark> should be minted. This field is an arbitrary value provided by the caller of the function.
-* `data` is additional arbitrary data that the caller provides. This field can be used to signal additional intent. For example, it can be used when migrating funds from a treasury to indicate that the funds should not go to a normal end-user account and instead should be bridged to a module account. It could also be used for pre-genesis bridging to indicate which validator to stake to in genesis.
+* `data` is additional arbitrary data that the caller provides. This field can be used to signal additional intent. For example, it can be used when migrating funds from a treasury to indicate that the funds should not go to a normal end-user account and instead should be bridged to a module account.
 
 ## Locked Tokens Transfer Restrictions
 
