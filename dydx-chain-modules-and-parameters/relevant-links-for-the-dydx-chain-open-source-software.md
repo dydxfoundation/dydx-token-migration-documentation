@@ -6,7 +6,7 @@ description: An overview of relevant links for the dYdX Chain Open Source Softwa
 
 **dYdX Chain Open-source Code**
 
-* [https://dydx.exchange/blog/dydx-chain-open-source-code](https://dydx.exchange/blog/dydx-chain-open-source-code)
+* [dYdX Chain open source software](https://dydx.exchange/blog/dydx-chain-official-release) - release of the completed, audited and open-sourced dYdX Chain software.
 * [v4-chain](https://github.com/dydxprotocol/v4-chain) - Validator and indexer code, protobuf definitions, scripts to generate Python and Javascript libraries using Telescope
 * [v4-abacus](https://github.com/dydxprotocol/v4-abacus) - Shared client business logic used across both web and mobile
 * [v4-web](https://github.com/dydxprotocol/v4-web) - The web front end for the dYdX Chain
@@ -38,5 +38,6 @@ description: An overview of relevant links for the dYdX Chain Open Source Softwa
 
 **MEV**
 
-* [dYdX V4 & MEV](https://dydx.exchange/blog/dydx-v4-and-mev)
+* [Distinguishing MEV from Expected Noise](https://dydx.exchange/blog/distinguishing-mev-from-expected-noise)
 * [An update on MEV - Catching a Bad Validator](https://dydx.exchange/blog/update-on-mev)
+* [dYdX V4 & MEV](https://dydx.exchange/blog/dydx-v4-and-mev)

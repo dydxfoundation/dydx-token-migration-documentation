@@ -3,6 +3,7 @@
 ## START HERE
 
 * [Introduction](README.md)
+* [dYdX Chain Architecture](start-here/dydx-chain-architecture.md)
 * [Legal Disclaimers](start-here/legal-disclaimers.md)
 
 ## Migration of DYDX from Ethereum to dYdX Chain
@@ -15,13 +16,13 @@
   * [v4 Community Pool](migration-of-dydx-from-ethereum-to-dydx-chain/treasurybridge-smart-contract/v4-community-pool.md)
 * [Open-Source Bridge User Interface](migration-of-dydx-from-ethereum-to-dydx-chain/open-source-bridge-user-interface.md)
 * [Token Comparison](migration-of-dydx-from-ethereum-to-dydx-chain/token-comparison.md)
+* [How to Bridge Guide](migration-of-dydx-from-ethereum-to-dydx-chain/how-to-bridge-guide.md)
 
 ## DYDX (dYdX Chain)
 
 * [Introduction](dydx-dydx-chain/introduction.md)
 * [x/bridge module](dydx-dydx-chain/x-bridge-module.md)
 * [Bridge Daemon](dydx-dydx-chain/bridge-daemon.md)
-* [Relevant Links for the dYdX Chain Open Source Software](dydx-dydx-chain/relevant-links-for-the-dydx-chain-open-source-software.md)
 
 ## dYdX Chain Modules and Parameters
 
@@ -30,5 +31,5 @@
 * [Staking](dydx-chain-modules-and-parameters/staking.md)
 * [Slashing](dydx-chain-modules-and-parameters/slashing.md)
 * [Distribution](dydx-chain-modules-and-parameters/distribution.md)
-* [Bank](dydx-chain-modules-and-parameters/bank.md)
 * [Governance](dydx-chain-modules-and-parameters/governance.md)
+* [Relevant Links for the dYdX Chain Open Source Software](dydx-chain-modules-and-parameters/relevant-links-for-the-dydx-chain-open-source-software.md)

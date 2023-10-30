@@ -4,27 +4,15 @@ description: An overview of DYDX (dYdX Chain)
 
 # Introduction
 
-In the section below we discuss how dYdX Chain validators would credit dYdX Chain user accounts with `DYDX`, if the dYdX community decided through dYdX governance to replace the `GovernanceStrategy smart contract` with the `GovernanceStrategyV2 smart contract.`
+After an ethDYDX holder interacts with the `wethDYDX Smart Contract`, dYdX Chain validators can also read and ingest the information in the `wethDYDX Smart Contract` such that corresponding DYDX can be distributed to users by validators on the dYdX Chain once there is confirmation that Step 1 above is complete and the ethDYDX is permanently locked in the `wethDYDX Smart Contract`.&#x20;
 
-### Overview of the `wethDYDX Smart Contract`
-
-If a user interacts with the `wethDYDX Smart Contract` before a certain cut-off date prior to the genesis of the dYdX Chain (“Genesis”), the amount of `ethDYDX` tokens sent by the user to the `wethDYDX Smart Contract` would be registered as event information of the `wethDYDX Smart Contract`. At this point, the user’s dYdX Chain wallet cannot be allocated with `DYDX` tokens because the dYdX Chain would not exist yet.
+If a user interacts with the `wethDYDX Smart Contract,`then each dYdX Chain validator participating in the consensus process would read the event information of the `wethDYDX Smart Contract` and allocate DYDX tokens on the dYdX Chain to a given user’s dYdX Chain address based on the corresponding amount (1-1) of `ethDYDX` tokens that the user sent to the `wethDYDX Smart Contract`.&#x20;
 
 
 
-<figure><img src="../.gitbook/assets/Bridging Step 3(a) (2).png" alt=""><figcaption></figcaption></figure>
-
-If a user interacts with the `wethDYDX Smart Contract` after Genesis, then each dYdX Chain validator participating in the consensus process would read the event information of the `wethDYDX Smart Contract` and allocate `DYDX` tokens on the dYdX Chain to a given user’s dYdX Chain address based on the corresponding amount (1-1) of `ethDYDX` tokens that the user sent to the `wethDYDX Smart Contract`. Note, a user who interacts with the `wethDYDX Smart Contract` after the relevant cut-off time referred to above but before Genesis would be credited with L1 dYdX Chain tokens by the dYdX Chain validators in the blocks confirmed after Genesis.
-
-
-
-<figure><img src="../.gitbook/assets/Bridging Step 3(b) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Bridging Step 3(b) NEW.png" alt=""><figcaption></figcaption></figure>
 
 ### How dYdX Chain Validators Credit User Accounts on dYdX Chain&#x20;
-
-#### Pre-Genesis Cut-off Time
-
-At Genesis, the deployer of the dYdX Chain open source software will need to select a cut-off time before Genesis, Ethereum block height `H.` Any bridging that occurred before block height `H` can be considered to be included in Genesis. Any bridging that occurs after Ethereum block height `H`will be credited in a later dYdX Chain block after Genesis.&#x20;
 
 #### Validator's Reading of the Logs
 
