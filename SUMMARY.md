@@ -26,10 +26,12 @@
 
 ## dYdX Chain Modules and Parameters
 
-* [Trading Rewards](dydx-chain-modules-and-parameters/trading-rewards.md)
-* [Fee Schedule](dydx-chain-modules-and-parameters/fee-schedule.md)
-* [Staking](dydx-chain-modules-and-parameters/staking.md)
-* [Slashing](dydx-chain-modules-and-parameters/slashing.md)
+* [Staking ](dydx-chain-modules-and-parameters/staking/README.md)
+  * [How to Stake Guide](dydx-chain-modules-and-parameters/staking/how-to-stake-guide.md)
+  * [How to Redelegate Guide](dydx-chain-modules-and-parameters/staking/how-to-redelegate-guide.md)
 * [Distribution](dydx-chain-modules-and-parameters/distribution.md)
 * [Governance](dydx-chain-modules-and-parameters/governance.md)
+* [Slashing](dydx-chain-modules-and-parameters/slashing.md)
+* [Fee Schedule](dydx-chain-modules-and-parameters/fee-schedule.md)
+* [Trading Rewards](dydx-chain-modules-and-parameters/trading-rewards.md)
 * [Relevant Links for the dYdX Chain Open Source Software](dydx-chain-modules-and-parameters/relevant-links-for-the-dydx-chain-open-source-software.md)
