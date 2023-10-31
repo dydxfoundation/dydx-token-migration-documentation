@@ -10,6 +10,18 @@ dYdX Chain is a proof-of-stake blockchain network and holders of DYDX can partic
 
 The governance module empowers DYDX holders to propose and vote on proposals, directly influencing the evolution of the dYdX Chain through a democratic process. The subject matter of proposals can vary from changing a governable parameter on the dYdX Chain, spending dYdX community funds, and updating the software that dYdX Chain nodes are running, among other things.
 
+## Summary&#x20;
+
+* [Proposal Submission and Deposits](./#proposal-submission-and-deposits)
+* [Proposal Types](./#proposal-types)
+  * [Text Proposals](./#text-proposals)
+  * [Community Spending Proposals](./#community-spending-proposals)
+  * [Parameter Change Proposals](./#parameter-change-proposals)
+  * [Software Upgrade Proposals](./#software-upgrade-proposals)
+* [Proposal Voting Options](./#proposal-voting-options)
+
+
+
 ## Key Concepts and Definitions
 
 * Deposits: Unstaked DYDX tokens pledged by the proposer and potentially other DYDX holders in support of the creation of a governance proposal.&#x20;
