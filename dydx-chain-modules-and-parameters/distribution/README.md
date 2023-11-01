@@ -10,9 +10,9 @@ The distribution module enables a simple collection and distribution mechanism t
 
 ## Summary
 
-* [Staking Rewards](distribution.md#staking-rewards)
-* [How rewards are distributed on dYdX Chain](distribution.md#how-rewards-are-distributed-on-dydx-chain)
-* [How staking rewards are calculated](distribution.md#how-staking-rewards-are-calculated)
+* [Staking Rewards](./#staking-rewards)
+* [How rewards are distributed on dYdX Chain](./#how-rewards-are-distributed-on-dydx-chain)
+* [How staking rewards are calculated](./#how-staking-rewards-are-calculated)
 
 ## Key Concepts and Definitions
 
@@ -34,7 +34,7 @@ These parameters may be adjusted by the dYdX Community with an on-chain governan
 
 ## Staking Rewards
 
-<figure><img src="../.gitbook/assets/Staking_Rewards_on_dYdX_Chain_v5 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Staking_Rewards_on_dYdX_Chain_v5 (1).png" alt=""><figcaption></figcaption></figure>
 
 On the dYdX Chain, all transaction fees (trading fees denominated in USDC, DYDX denominated gas fees from transactions, and USDC denominated gas fees from transactions) collected by the protocol will be distributed to validators and DYDX holders that stake to dYdX Chain validators.&#x20;
 
@@ -42,7 +42,7 @@ The Cosmos [x/distribution module](https://docs.cosmos.network/main/modules/dist
 
 ## How rewards are distributed on dYdX Chain
 
-<figure><img src="../.gitbook/assets/Fee_Distribution_on_dYdX_Chain_v6 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Fee_Distribution_on_dYdX_Chain_v6 (1).png" alt=""><figcaption></figcaption></figure>
 
 DYDX holders who stake to (a) validator(s) are entitled to a portion of the following fees:&#x20;
 
@@ -57,7 +57,7 @@ Note, Staking Rewards are not automatically staked to a dYdX Chain validator. An
 
 ## How staking rewards are calculated
 
-<figure><img src="../.gitbook/assets/Staking Rewards Formula.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Staking Rewards Formula.png" alt=""><figcaption></figcaption></figure>
 
 * Fee Pool = fee pool from maker trading fees (USDC), taker trading fees (USDC), DYDX denominated gas fees from transactions, and USDC denominated gas fees from transactions for a given block.
 * Number of DYDX staked by DYDX holder = total DYDX tokens that a dYdX Chain address has staked to (a) validator(s) at a given block. &#x20;
