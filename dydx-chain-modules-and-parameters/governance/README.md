@@ -26,7 +26,7 @@ The governance module empowers DYDX holders to propose and vote on proposals, di
 
 * Deposits: Unstaked DYDX tokens pledged by the proposer and potentially other DYDX holders in support of the creation of a governance proposal.&#x20;
 * Inheritance: If a DYDX staker does not vote on a proposal, they will inherit the vote of their validator for the respective proposal.
-* Vote Weight: A DYDX holder's vote weight is equal to the amount of DYDX the user has actively staked (1-1). DYDX tokens that are not staked will not count towards a DYDX holder's vote weight.
+* Vote Weight: A DYDX holder's vote weight is equal to the amount of DYDX the user has actively staked (1-1). DYDX tokens that are not staked or are in the unbonding period will not count towards a DYDX holder's vote weight.
 * Tallying: After the voting period concludes, the [TallyParams](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L2878-L2880) aggregate the vote results to determine if the proposal was accepted or rejected by the dYdX community.&#x20;
 * Execution: If a proposal passes, the execution process depends on the type of proposal.
 
@@ -42,7 +42,7 @@ These parameters may be adjusted by the dYdX Community with an on-chain governan
 
 ##
 
-<figure><img src="../../.gitbook/assets/dYdX Chain Governance Deposits and Voting_v8 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dYdX Chain Governance Deposits and Voting_v9.png" alt=""><figcaption></figcaption></figure>
 
 ## Proposal Submission and Deposits
 

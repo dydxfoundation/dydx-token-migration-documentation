@@ -23,7 +23,7 @@ Below we outline the flow of dYdX Chain governance, from inception of the idea t
 
 
 
-<figure><img src="../../.gitbook/assets/dYdX Improvement Proposal (DIP) Lifecycle.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/dYdX Improvement Proposal (DIP) Lifecycle_V2.png" alt=""><figcaption></figcaption></figure>
 
 
 

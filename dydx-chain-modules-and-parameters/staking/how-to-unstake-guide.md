@@ -6,7 +6,7 @@ description: An overview of how to unstake DYDX from a dYdX Chain validator.
 
 ## Overview
 
-DYDX holders who stake DYDX to a Validator can send a transaction to unstake and remove their tokens from being staked to a Validator. After this transaction, the DYDX tokens enter an unbonding period. During the unbonding period, stakers can choose to delegate to a separate validator without having to wait for the unbonding period to elapse. However, a user’s slashing risk with the original Validator remains until the unbonding period concludes.&#x20;
+DYDX holders who stake DYDX to a validator can send a transaction to unstake and remove their tokens from being staked to a validator. After this transaction, the DYDX tokens enter an unbonding period. During the unbonding period, stakers can choose to delegate to a separate validator without having to wait for the unbonding period to elapse. However, a user’s slashing risk with the original validator remains until the unbonding period concludes.&#x20;
 
 More information about Redelegation is available [here](https://www.dydx.foundation/how-to-redelegate).&#x20;
 
@@ -19,7 +19,7 @@ More information about Redelegation is available [here](https://www.dydx.foundat
 
 <figure><img src="../../.gitbook/assets/1(a) - Unstake.png" alt=""><figcaption></figcaption></figure>
 
-* 1(a) The [Keplr Dashboard](https://wallet.keplr.app/chains/dydx) displays the Validators that you have staked to and the amount of DYDX staked to each respective Validator.
+* 1(a) The [Keplr Dashboard](https://wallet.keplr.app/chains/dydx) displays the validators that you have staked to and the amount of DYDX staked to each respective validator.
 
 <figure><img src="../../.gitbook/assets/1(b) - Unstake.png" alt=""><figcaption></figcaption></figure>
 
@@ -35,6 +35,6 @@ More information about Redelegation is available [here](https://www.dydx.foundat
 
 ## _Step 2 - New balance_
 
-Once you unstake, you will see your available balance updated on the dashboard and you can restake these unstaked DYDX tokens with the same Validator or select another Validator to stake.
+Once you unstake, you will see your available balance updated on the dashboard and you can restake these unstaked DYDX tokens with the same validator or select another validator to stake.
 
 \

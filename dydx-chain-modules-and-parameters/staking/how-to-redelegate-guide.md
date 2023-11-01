@@ -8,11 +8,11 @@ description: >-
 
 ## Overview
 
-Redelegation in the Cosmos SDK is a feature that allows a delegator to shift 100% or a portion of their staked tokens (delegations) from one Validator to another without having to wait for the unbonding period.&#x20;
+Redelegation in the Cosmos SDK is a feature that allows a delegator to shift 100% or a portion of their staked tokens (delegations) from one validator to another without having to wait for the unbonding period.&#x20;
 
 During the redelegation process, the tokens remain staked, meaning they continue to contribute to the network's security and potentially earn rewards for the delegator.
 
-However, a user’s slashing risk with the original Validator remains until the unbonding period concludes. For example, a user stakes 20 DYDX to Validator A for 59 days, on day 60 the user decides to redelegate their 20 DYDX to Validator B. From days 60-90, the user is at a risk of having a portion of their 20 staked DYDX slashed based on the conduct of Validator A. After the 90th day, the slashing risk transitions to Validator B.
+However, a user’s slashing risk with the original validator remains until the unbonding period concludes. For example, a user stakes 20 DYDX to Validator A for 59 days, on day 60 the user decides to redelegate their 20 DYDX to Validator B. From days 60-90, the user is at a risk of having a portion of their 20 staked DYDX slashed based on the conduct of Validator A. After the 90th day, the slashing risk transitions to Validator B.
 
 After redelegating, any DYDX that was redelegated must wait 30 days before it can be redelegated.
 
@@ -20,7 +20,7 @@ After redelegating, any DYDX that was redelegated must wait 30 days before it ca
 
 <figure><img src="../../.gitbook/assets/1(a) - Redelegate.png" alt=""><figcaption></figcaption></figure>
 
-* 1(a) The [Keplr dashboard](https://wallet.keplr.app/chains/dydx) displays the Validators that you have staked to and the amount of tokens staked to each respective validator. Click on the arrow next to the Validator you’ve staked to previously.&#x20;
+* 1(a) The [Keplr dashboard](https://wallet.keplr.app/chains/dydx) displays the validators that you have staked to and the amount of tokens staked to each respective validator. Click on the arrow next to the validator you’ve staked to previously.&#x20;
 
 <figure><img src="../../.gitbook/assets/1(b) - Redelegate.png" alt=""><figcaption></figcaption></figure>
 
@@ -28,7 +28,7 @@ After redelegating, any DYDX that was redelegated must wait 30 days before it ca
 
 <figure><img src="../../.gitbook/assets/1(c) - Redelegate.png" alt=""><figcaption></figcaption></figure>
 
-* 1(c) select the Validator that you would like to redelegate your DYDX tokens to and click “Next”.
+* 1(c) select the validator that you would like to redelegate your DYDX tokens to and click “Next”.
 
 <figure><img src="../../.gitbook/assets/1(d) - Redelegate.png" alt=""><figcaption></figcaption></figure>
 

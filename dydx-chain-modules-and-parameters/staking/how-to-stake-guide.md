@@ -80,7 +80,7 @@ dYdX Chain users can export their secret phrase from the bridge interface operat
 <figure><img src="../../.gitbook/assets/4(a) (1).png" alt=""><figcaption></figcaption></figure>
 
 * 4(a) navigate back to the Keplr Dashboard and paste the phrase into the “Import Existing Wallet'' page by selecting “Import”.
-* **\*\*\*Reminder - make sure all 24 words are pasted.**
+* **\*\*\*Reminder - make sure all 24 words are pasted entirely and in the correct order.**
 
 <figure><img src="../../.gitbook/assets/4(b) (1).png" alt=""><figcaption></figcaption></figure>
 
