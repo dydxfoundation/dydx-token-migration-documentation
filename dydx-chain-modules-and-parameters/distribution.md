@@ -51,7 +51,7 @@ DYDX holders who stake to (a) validator(s) are entitled to a portion of the foll
 * USDC maker trading fees, and &#x20;
 * USDC taker trading fees.
 
-Fees will accrue in the `Distribution ModuleAccount Account` each block. Each block a DYDX staker may claim their portion of Staking Rewards. If a DYDX staker does not claim Staking Rewards, their respective rewards will accrue in the distribution ModuleAccount account.&#x20;
+Fees will accrue in the `Distribution ModuleAccount Account` each block. Each block a DYDX staker may claim their portion of Staking Rewards. If a DYDX staker does not claim Staking Rewards, their respective rewards will accrue in the `Distribution ModuleAccount Account`.&#x20;
 
 Note, Staking Rewards are not automatically staked to a dYdX Chain validator. Any DYDX earned by a staker as Staking Rewards will need to be claimed from the `Distribution ModuleAccount Account` and staked to a dYdX Chain validator to contribute to the security of the network and qualify to earn staking rewards.
 
