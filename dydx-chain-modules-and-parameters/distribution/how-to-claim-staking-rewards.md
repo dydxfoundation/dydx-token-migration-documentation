@@ -21,7 +21,7 @@ Below, we provide a step-by-step guide on how DYDX delegators can claim Staking 
 
 ## Step 2 - New balance and option to stake
 
-Once you have claimed your rewards, you will see your available balance updated on the Keplr Dashboard and you can re-stake any claimed DYDX tokens to increase your stake with the same Validator or select another Validator to stake to.&#x20;
+Once you have claimed your rewards, you will see your available balance updated on the Keplr Dashboard and you can re-stake any claimed DYDX to increase your stake with the same Validator or select another Validator to stake to.&#x20;
 
 \
 \
