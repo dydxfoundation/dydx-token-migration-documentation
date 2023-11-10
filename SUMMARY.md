@@ -33,6 +33,7 @@
 * [Distribution](dydx-chain-modules-and-parameters/distribution/README.md)
   * [How to Claim Staking Rewards](dydx-chain-modules-and-parameters/distribution/how-to-claim-staking-rewards.md)
 * [Governance](dydx-chain-modules-and-parameters/governance/README.md)
+  * [How to Vote Guide](dydx-chain-modules-and-parameters/governance/how-to-vote-guide.md)
   * [Proposal Lifecycle](dydx-chain-modules-and-parameters/governance/proposal-lifecycle.md)
 * [Slashing](dydx-chain-modules-and-parameters/slashing.md)
 * [Fee Schedule](dydx-chain-modules-and-parameters/fee-schedule.md)

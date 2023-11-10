@@ -94,7 +94,7 @@ The TreasuryVester contract was inspired by [Uniswap](https://github.com/Uniswap
 
 
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The Short Timelock can only execute governance-approved actions.
 

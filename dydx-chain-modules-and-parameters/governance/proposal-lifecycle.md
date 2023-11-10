@@ -57,6 +57,16 @@ Before submitting a transaction to create a governance proposal, the prospective
 
 As a general rule, any information specific to a proposal (e.g., Title, description, deposit, parameters, recipient) can be placed in a `json` file, while information general to a transaction of any kind (e.g., chain-id, node-id, gas, fees) can remain in the CLI (the command-line interface).
 
+{% hint style="warning" %}
+The description **must** **at least** contain a summary of the DRC that has been posted on the dYdX governance forum, as well as a link to the forum post so that prospective voters have access to the full context of the DIP.&#x20;
+{% endhint %}
+
+The description within the `json` file will be visible to the prospective voters when they:
+
+* query the proposal [using the CLI](proposal-lifecycle.md#6.-on-chain-dip-voting),&#x20;
+* view the proposal on their [wallet dashboard](https://app.gitbook.com/o/-MeNgGQU0ucT2xo4s8-T/s/cSd7APxHbsYMlFFAeIMP/\~/changes/29/dydx-chain-modules-and-parameters/governance/how-to-vote-guide) (such as Keplr or Leap), or
+* view the proposal on a block explorer (such as Mintscan).
+
 ## 4. (On-chain) Submitting a Proposal
 
 An on-chain DIP may be submitted by a dYdX community member using the following generic command format (on the the command-line interface):
@@ -131,6 +141,8 @@ If the `min_deposit` is satisfied within the `max_deposit_period`, the vote will
 If the `min_deposit` is satisfied within the `max_deposit_period`, the vote will start and voting will last for the `voting_period`.
 
 Note, only staked DYDX tokens can vote on dYdX Chain governance proposals.&#x20;
+
+Prospective voter can vote by following the steps below or through a wallet. The steps to vote through a wallet can be viewed on the [How to Vote Guide](how-to-vote-guide.md).
 
 1. To cast a vote, the prospective voter must know the `proposalID` that they intend to vote on. The prospective voter can query the list of proposals on dYdX Chain by entering this command on the CLI:
 
