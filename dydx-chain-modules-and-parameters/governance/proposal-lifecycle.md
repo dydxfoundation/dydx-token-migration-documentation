@@ -142,27 +142,7 @@ If the `min_deposit` is satisfied within the `max_deposit_period`, the vote will
 
 Note, only staked DYDX tokens can vote on dYdX Chain governance proposals.&#x20;
 
-Prospective voter can vote by following the steps below or through a wallet. The steps to vote through a wallet can be viewed on the [How to Vote Guide](how-to-vote-guide.md).
-
-1. To cast a vote, the prospective voter must know the `proposalID` that they intend to vote on. The prospective voter can query the list of proposals on dYdX Chain by entering this command on the CLI:
-
-```
-dydxprotocold query gov proposals
-```
-
-2. If the prospective voter would like to know more details about the proposal, they can query it by entering this command on the CLI:
-
-```sh
-dydxprotocold query gov proposal <proposal-id>
-```
-
-3. Once the prospective voter understands the subject matter being voted on and has formed an opinion about it, the prospective voter can cast a vote by entering this command on the CLI:
-
-```sh
-dydxprotocold tx gov vote <proposal-id> <option> --from <key>
-```
-
-During the voting period, the prospective voter may select a vote of either `Yes`, `No`, `Abstain`, or `NoWithVeto`. The prospective voter may change their vote at any time before the voting period ends.&#x20;
+Prospective voter can vote by following the steps on the [How to Vote Guide](how-to-vote-guide.md).
 
 If a DYDX staker does not vote on a proposal, they will inherit the vote of their validator for the respective proposal.
 
