@@ -58,7 +58,13 @@ Before submitting a transaction to create a governance proposal, the prospective
 As a general rule, any information specific to a proposal (e.g., Title, description, deposit, parameters, recipient) can be placed in a `json` file, while information general to a transaction of any kind (e.g., chain-id, node-id, gas, fees) can remain in the CLI (the command-line interface).
 
 {% hint style="warning" %}
-The description **must** **at least** contain a summary of the DRC that has been posted on the dYdX governance forum, as well as a link to the forum post so that prospective voters have access to the full context of the DIP.&#x20;
+The description **must** **at least** contain:
+
+* a summary of the DRC that has been posted on the dYdX governance forum,&#x20;
+* a link to the completed [DIP template](https://docs.google.com/document/d/1LYK3A7aOVAIyobDJPGn-nSiPoFCz63kmFT6dGF-Ob3E/edit?usp=sharing), and
+* a link to the forum post,
+
+so that prospective voters have access to the full context of the DIP.&#x20;
 {% endhint %}
 
 The description within the `json` file will be visible to the prospective voters when they:
@@ -88,29 +94,43 @@ Here is an example using the above command format to submit a software upgrade p
 dydxprotocold tx gov submit-proposal software-upgrade \ 
 --upgrade_plan.json \
 --from dydx1vvc9vl6z9pu0vt2y79d0ln8zp6qmpmrhrcnnuy \ 
---deposit 10000000000DYDX \ 
---chain-id dydx-mainnet \ 
+--deposit 10000000000adydx \ 
+--chain-id dydx-mainnet-1 \ 
 --gas 500000 \ 
---fees 200000000000000DYDX \ 
+--fees 200000000000000adydx \ 
 --node https://rpc.dydx.exchange:443 \
 ```
 
 If `<proposal type>` is left blank, the type will be a Text proposal. Otherwise, it can be set to `param-change`, `software-upgrade`, or `community-treasury-spend`.&#x20;
 
 1. `dydxprotocold` is the command-line interface client that is used to send transactions and query the dYdX Chain and `tx gov submit-proposal software-upgrade` indicates that the transaction is submitting a community pool spend proposal.
-2. `--~/upgrade_plan.json` indicates the file containing the plan.
+2. `--~/upgrade_plan.json` indicates the file containing the proposal information.
 3. `--from dydx1vvc9vl6z9pu0vt2y79d0ln8zp6qmpmrhrcnnuy` is the account key that pays the transaction fee and deposit amount. This account key must exist in the keyring on your device and it must be an address you control.
-4. `--deposit` is the number of DYDX&#x20;
-5. `--chain-id dydx-mainnet` is dYdX Chain.
+4. `--deposit` is the number of DYDX token used as a deposit.&#x20;
+5. `--chain-id dydx-mainnet-1` is dYdX Chain.
 6. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction.
    * The more content there is in the description of your proposal, the more gas your transaction will consume.
    * If this number isn't high enough and there isn't enough gas to process your transaction, the transaction will fail.
    * The transaction will only use the amount of gas needed to process the transaction.
+   * You can simulate the amount of gas needed to submit the proposal by adding `--dry-run` at the end of the CLI command above.
+   * In practice, the simulation function isn’t always accurate, so you may want to multiply the return the gas unit by a \~1.3x multiplier. For example, with the following result, you will need to input around `--gas 1100000`&#x20;
+
+```powershell
+% dydxprotocold tx gov submit-proposal 
+~/dydx/proposal_enable_all_clob_pairs.json 
+--from dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4 
+--dry-run
+
+gas estimate: 837840
+```
+
 7. `--fees` is a flat-rate incentive for a validator to process your transaction.
-   * The network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee.
-   * Many nodes use a minimum fee to disincentivize transaction spamming.
-   * 200000000000000DYDX is equal to 0.0002 DYDX.
-8. `--node` is \[...]
+
+* The network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee.
+* Many nodes use a minimum fee to disincentivize transaction spamming.
+* 200000000000000adydx is equal to 0.0002 DYDX.
+
+8. `--node` is RPC endpoint address that can be found [here](https://docs.dydx.trade/networks/network1/resources).
 
 To submit the proposal on-chain, the proposer will need to deposit a number of DYDX that is equal to or greater than the `min_initial_deposit_ratio`.
 
