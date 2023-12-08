@@ -6,7 +6,7 @@ description: An overview of the dYdX Chain Community Treasury.
 
 ## Overview
 
-The [Community Treasury](https://www.mintscan.io/dydx/address/dydx15ztc7xy42tn2ukkc0qjthkucw9ac63pgp70urn) is a community-controlled module account on dYdX Chain. DYDX will vest to the Community Treasury on a continuous basis until August 3, 2026. Any dYdX community member satisfying the min\_initial\_deposit\_ratio can submit a Community Spending proposal to spend DYDX in the Community Treasury.
+The [Community Treasury](https://www.mintscan.io/dydx/address/dydx15ztc7xy42tn2ukkc0qjthkucw9ac63pgp70urn) is a community-controlled module account on dYdX Chain. DYDX will vest to the Community Treasury on a continuous basis until August 3, 2026. Any dYdX community member satisfying the [`min_initial_deposit_ratio`](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L2881) can submit a Community Spending proposal to spend DYDX in the Community Treasury.
 
 The Community Treasury was created with the following objectives:
 
@@ -27,6 +27,7 @@ The Community Treasury was created with the following objectives:
 | ----------- | ----------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | Description | The account to vest tokens from                                                                                                           | The account to vest tokens to                                                                                                               | The token that is vested                                                                                                        | The start time of vesting                                                                                                             | The end time of vesting                                                                                                             |
 | Value       | community\_vester                                                                                                                         | community\_treasury                                                                                                                         | adydx                                                                                                                           | 2021-08-03T15:00:00Z                                                                                                                  | 2026-08-03T15:00:00Z                                                                                                                |
+| Account     | dydx1wxje320an3karyc6mjw4zghs300dmrjkwn7xtk                                                                                               | dydx15ztc7xy42tn2ukkc0qjthkucw9ac63pgp70urn                                                                                                 |                                                                                                                                 |                                                                                                                                       |                                                                                                                                     |
 
 ## Community Treasury
 
@@ -50,7 +51,7 @@ The Vest Module allows the vesting process to happen on the dYdX Chain. The modu
 
 The dYdX Community through a governance vote has the ability to create, update, or delete `vest_entries` through a governance vote.
 
-Based on the `start_time` and `end_time`, DYDX will vest from the Community Vester to the Community Treasury at approximately 2.04 DYDX per second.
+Based on the `start_time` and `end_time`, DYDX will vest from the Community Vester to the Community Treasury at approximately \~2.04 DYDX per second.
 
 _**What types of proposals can be submitted to the Community Treasury?**_
 

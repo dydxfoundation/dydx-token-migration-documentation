@@ -6,7 +6,7 @@ description: An overview of Trading Rewards and the Rewards Module.
 
 ## Overview
 
-Trading Rewards will be distributed to users who trade on dYdX v3 based on the Trading Rewards formula. The objective of Trading Rewards is to (1) incentivize all traders to use the dYdX Chain and (2) accelerate market liquidity and overall product usage.
+Trading Rewards will be distributed to users who trade on dYdX Chain based on the Trading Rewards formula. The objective of Trading Rewards is to (1) incentivize all traders to use the dYdX Chain and (2) accelerate market liquidity and overall product usage.
 
 ## Parameters
 
@@ -27,7 +27,9 @@ Trading Rewards will be distributed to users who trade on dYdX v3 based on the T
 
 ## Vest Module
 
-<table data-header-hidden><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden></th><th data-hidden></th><th data-hidden></th></tr></thead><tbody><tr><td><a href="https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3820">vester_account</a></td><td><a href="https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3821">treasury_account</a></td><td><a href="https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3822">denom</a></td><td><a href="https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3823">start_time</a></td><td><a href="https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3824">end_time</a></td><td>Field Name</td></tr><tr><td>The account to vest tokens from</td><td>The account to vest tokens to</td><td>The token that is vested</td><td>The start time of vesting</td><td>The end time of vesting</td><td>Description</td></tr><tr><td>rewards_vester</td><td>rewards_treasury</td><td>adydx</td><td>2021-08-03T15:00:00Z</td><td>2026-08-03T15:00:00Z</td><td>Value</td></tr></tbody></table>
+
+
+<table data-header-hidden data-full-width="false"><thead><tr><th></th><th></th><th></th><th></th><th></th><th></th></tr></thead><tbody><tr><td>Field Name</td><td><a href="https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3820">vester_account</a></td><td><a href="https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3821">treasury_account</a></td><td><a href="https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3822">denom</a></td><td><a href="https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3823">start_time</a></td><td><a href="https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3824">end_time</a></td></tr><tr><td>Description</td><td>The account to vest tokens from</td><td>The account to vest tokens to</td><td>The token that is vested</td><td>The start time of vesting</td><td>The end time of vesting</td></tr><tr><td>Value</td><td>rewards_vester</td><td>rewards_treasury</td><td>adydx</td><td>2021-08-03T15:00:00Z</td><td>2026-08-03T15:00:00Z</td></tr><tr><td>Account </td><td>dydx1ltyc6y4skclzafvpznpt2qjwmfwgsndp458rmp</td><td>dydx16wrau2x4tsg033xfrrdpae6kxfn9kyuerr5jjp</td><td></td><td></td><td></td></tr></tbody></table>
 
 ## Trading Rewards Formula
 
@@ -77,7 +79,7 @@ The Vest Module allows the vesting process to happen on the dYdX Chain. The modu
 
 The dYdX Community through a governance vote has the ability to create, update, or delete `vest_entries` through a governance vote.
 
-Based on the `start_time` and `end_time`, DYDX will vest from the Rewards Vester to the Rewards Treasury at approximately 0.64 DYDX per second.
+Based on the `start_time` and `end_time`, DYDX will vest from the Rewards Vester to the Rewards Treasury at approximately \~0.64 DYDX per second.
 
 _**How much DYDX will I earn in Trading Rewards?**_&#x20;
 
