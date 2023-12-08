@@ -38,5 +38,6 @@
   * [Proposal Submission Technical Guide](dydx-chain-modules-and-parameters/governance/proposal-submission-technical-guide.md)
 * [Slashing](dydx-chain-modules-and-parameters/slashing.md)
 * [Fee Schedule](dydx-chain-modules-and-parameters/fee-schedule.md)
-* [Trading Rewards](dydx-chain-modules-and-parameters/trading-rewards.md)
+* [Trading Rewards and Rewards Module](dydx-chain-modules-and-parameters/trading-rewards-and-rewards-module.md)
+* [Community Treasury](dydx-chain-modules-and-parameters/community-treasury.md)
 * [Relevant Links for the dYdX Chain Open Source Software](dydx-chain-modules-and-parameters/relevant-links-for-the-dydx-chain-open-source-software.md)
