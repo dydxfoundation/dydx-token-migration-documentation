@@ -35,6 +35,7 @@
 * [Governance](dydx-chain-modules-and-parameters/governance/README.md)
   * [How to Vote Guide](dydx-chain-modules-and-parameters/governance/how-to-vote-guide.md)
   * [Proposal Lifecycle](dydx-chain-modules-and-parameters/governance/proposal-lifecycle.md)
+  * [Proposal Submission Technical Guide](dydx-chain-modules-and-parameters/governance/proposal-submission-technical-guide.md)
 * [Slashing](dydx-chain-modules-and-parameters/slashing.md)
 * [Fee Schedule](dydx-chain-modules-and-parameters/fee-schedule.md)
 * [Trading Rewards](dydx-chain-modules-and-parameters/trading-rewards.md)

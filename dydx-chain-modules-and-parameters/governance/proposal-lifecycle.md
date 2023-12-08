@@ -57,10 +57,31 @@ Before submitting a transaction to create a governance proposal, the prospective
 
 As a general rule, any information specific to a proposal (e.g., Title, description, deposit, parameters, recipient) can be placed in a `json` file, while information general to a transaction of any kind (e.g., chain-id, node-id, gas, fees) can remain in the CLI (the command-line interface).
 
+Below is a template `json` file that can be used for a Text proposal:
+
+```json
+{
+  "title": "Title",
+  "deposit": "2000000000000000000000adydx",
+  "summary": "Summary [max 255 characters]",
+  "messages": [
+    {
+      "@type": "/cosmos.gov.v1.MsgExecLegacyContent",
+      "content": {
+        "@type": "/cosmos.gov.v1beta1.TextProposal",
+        "title": "Title goes here.",
+        "description": "Additional summary or blank if not needed."
+      },
+      "authority": "dydx10d07y265gmmuvt4z0w9aw880jnsr700jnmapky"
+    }
+  ]
+}
+```
+
 {% hint style="warning" %}
 The description **must** **at least** contain:
 
-* a summary of the DRC that has been posted on the dYdX governance forum,&#x20;
+* a short summary of the DRC that has been posted on the dYdX governance forum,&#x20;
 * a link to the completed [DIP template](https://docs.google.com/document/d/1LYK3A7aOVAIyobDJPGn-nSiPoFCz63kmFT6dGF-Ob3E/edit?usp=sharing), and
 * a link to the forum post,
 
@@ -75,7 +96,9 @@ The description within the `json` file will be visible to the prospective voters
 
 ## 4. (On-chain) Submitting a Proposal
 
-An on-chain DIP may be submitted by a dYdX community member using the following generic command format (on the the command-line interface):
+If you have never submitted a proposal on dYdX Chain before, it would be helpful to familiarize yourself with this [technical guide](https://app.gitbook.com/o/-MeNgGQU0ucT2xo4s8-T/s/cSd7APxHbsYMlFFAeIMP/\~/changes/32/dydx-chain-modules-and-parameters/governance/proposal-submission-technical-guide).
+
+An on-chain DIP may be submitted by a dYdX community member using the following generic command format (on the command-line interface):
 
 ```sh
 dydxprotocold tx gov submit-proposal <proposal type> \
@@ -93,8 +116,8 @@ Here is an example using the above command format to submit a software upgrade p
 ```sh
 dydxprotocold tx gov submit-proposal software-upgrade \ 
 --upgrade_plan.json \
---from dydx1vvc9vl6z9pu0vt2y79d0ln8zp6qmpmrhrcnnuy \ 
---deposit 10000000000adydx \ 
+--from wallet-1 \ 
+--deposit 10000000000000000000000adydx \ 
 --chain-id dydx-mainnet-1 \ 
 --gas 500000 \ 
 --fees 200000000000000adydx \ 
@@ -103,10 +126,10 @@ dydxprotocold tx gov submit-proposal software-upgrade \
 
 If `<proposal type>` is left blank, the type will be a Text proposal. Otherwise, it can be set to `param-change`, `software-upgrade`, or `community-treasury-spend`.&#x20;
 
-1. `dydxprotocold` is the command-line interface client that is used to send transactions and query the dYdX Chain and `tx gov submit-proposal software-upgrade` indicates that the transaction is submitting a community pool spend proposal.
+1. `dydxprotocold` is the command-line interface client that is used to send transactions and query the dYdX Chain and `tx gov submit-proposal software-upgrade` indicates that the transaction is submitting a software upgrade proposal.
 2. `--~/upgrade_plan.json` indicates the file containing the proposal information.
-3. `--from dydx1vvc9vl6z9pu0vt2y79d0ln8zp6qmpmrhrcnnuy` is the account key that pays the transaction fee and deposit amount. This account key must exist in the keyring on your device and it must be an address you control.
-4. `--deposit` is the number of DYDX token used as a deposit.&#x20;
+3. `--from wallet-1` is the account key that pays the transaction fee and deposit amount. This account key must exist in the keychain on your device and it must be an address you control. To register an account in the keychain, you can follow the steps [here](proposal-submission-technical-guide.md#4.-registering-an-account-in-the-keychain).
+4. `--deposit` is the number of DYDX token used as a deposit. The number is divided by 10^18, so `10000000000000000000000adydx` equals to 10,000 DYDX.
 5. `--chain-id dydx-mainnet-1` is dYdX Chain.
 6. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction.
    * The more content there is in the description of your proposal, the more gas your transaction will consume.
@@ -116,7 +139,7 @@ If `<proposal type>` is left blank, the type will be a Text proposal. Otherwise,
    * In practice, the simulation function isn’t always accurate, so you may want to multiply the return the gas unit by a \~1.3x multiplier. For example, with the following result, you will need to input around `--gas 1100000`&#x20;
 
 ```powershell
-% dydxprotocold tx gov submit-proposal 
+dydxprotocold tx gov submit-proposal 
 ~/dydx/proposal_enable_all_clob_pairs.json 
 --from dydx199tqg4wdlnu4qjlxchpd7seg454937hjrknju4 
 --dry-run
@@ -128,9 +151,9 @@ gas estimate: 837840
 
 * The network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee.
 * Many nodes use a minimum fee to disincentivize transaction spamming.
-* 200000000000000adydx is equal to 0.0002 DYDX.
+* The number is divided by 10^18, `200000000000000adydx` is equal to 0.0002 DYDX.
 
-8. `--node` is RPC endpoint address that can be found [here](https://docs.dydx.trade/networks/network1/resources).
+8. `--node` is RPC endpoint address that can be found [here](https://docs.dydx.trade/networks/network1/resources). Remember to append `:443` to the end of the RPC URI to access the endpoint properly and securely.
 
 To submit the proposal on-chain, the proposer will need to deposit a number of DYDX that is equal to or greater than the `min_initial_deposit_ratio`.
 
