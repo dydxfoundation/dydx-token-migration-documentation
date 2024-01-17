@@ -128,7 +128,9 @@ Locked Tokens can still be bridged from Ethereum to the dYdX Chain  via the `wet
 1. `wethDYDX`, on a 1-1 proportional basis, on Ethereum, and&#x20;
 2. `DYDX` tokens, on a 1-1 proportional basis, on the dYdX Chain. &#x20;
 
-Any `wethDYDX` and/or dYdX-Chain `DYDX` tokens received in exchange for locked `ethDYDX` tokens shall continue to be subject to the same transfer restrictions and release schedule. As with the current locked `ethDYDX` tokens, locked wethDYDX tokens and locked dYdX-Chain `DYDX` tokens may also be bridged to another blockchain, used for voting or delegating purposes and/or staked to a validator, if applicable.\
+Any `wethDYDX` and/or dYdX-Chain `DYDX` tokens received in exchange for locked `ethDYDX` tokens shall continue to be subject to the same transfer restrictions and release schedule. As with the current locked `ethDYDX` tokens, locked wethDYDX tokens and locked dYdX-Chain `DYDX` tokens may also be bridged to another blockchain, used for voting or delegating purposes and/or staked to a validator, if applicable.
+
+Any liquid staking tokens (LSTs) received in exchange for locked `ethDYDX`, `wethDYDX` and/or `DYDX` tokens, including, without limitation, `stDYDX` or `stkDYDX`, shall also continue to be subject to the same transfer restrictions and release schedule. As with locked `ethDYDX` tokens, locked `wethDYDX` tokens and locked dYdX-Chain `DYDX` tokens, locked LSTs received when liquid-staking `ethDYDX`, `wethDYDX` and/or `DYDX` tokens may also be bridged to another blockchain, used for voting or delegating purposes and/or staked to a validator, if applicable.\
 
 
 ### Helpful Links:
