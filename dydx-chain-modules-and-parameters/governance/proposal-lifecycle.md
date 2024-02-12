@@ -12,7 +12,7 @@ Below we outline the flow of dYdX Chain governance, from inception of the idea t
 
 ## Summary
 
-* [ Forum Discussion](proposal-lifecycle.md#0.-forum-discussion)
+* [ Forum Discussion](proposal-lifecycle.md#id-0.-forum-discussion)
 * [(Off-chain) DRC Creation](proposal-lifecycle.md#1.-off-chain-drc-creation)
 * [(Off-chain) DRC Discussion and Feedback](proposal-lifecycle.md#2.-off-chain-drc-discussion-and-feedback)
 * [(Off-chain) DIP Creation](proposal-lifecycle.md#3.-off-chain-dip-creation)
@@ -90,13 +90,13 @@ so that prospective voters have access to the full context of the DIP.&#x20;
 
 The description within the `json` file will be visible to the prospective voters when they:
 
-* query the proposal [using the CLI](proposal-lifecycle.md#6.-on-chain-dip-voting),&#x20;
-* view the proposal on their [wallet dashboard](https://app.gitbook.com/o/-MeNgGQU0ucT2xo4s8-T/s/cSd7APxHbsYMlFFAeIMP/\~/changes/29/dydx-chain-modules-and-parameters/governance/how-to-vote-guide) (such as Keplr or Leap), or
+* query the proposal [using the CLI](proposal-lifecycle.md#id-6.-on-chain-dip-voting),&#x20;
+* view the proposal on their [wallet dashboard](how-to-vote-guide.md) (such as Keplr or Leap), or
 * view the proposal on a block explorer (such as Mintscan).
 
 ## 4. (On-chain) Submitting a Proposal
 
-If you have never submitted a proposal on dYdX Chain before, it would be helpful to familiarize yourself with this [technical guide](https://app.gitbook.com/o/-MeNgGQU0ucT2xo4s8-T/s/cSd7APxHbsYMlFFAeIMP/\~/changes/32/dydx-chain-modules-and-parameters/governance/proposal-submission-technical-guide).
+If you have never submitted a proposal on dYdX Chain before, it would be helpful to familiarize yourself with this [technical guide](proposal-submission-technical-guide.md).
 
 An on-chain DIP may be submitted by a dYdX community member using the following generic command format (on the command-line interface):
 

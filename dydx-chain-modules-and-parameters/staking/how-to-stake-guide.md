@@ -6,7 +6,7 @@ description: An overview of how to stake DYDX to a dYdX Chain validator.
 
 ## Overview
 
-Below, we provide a step-by-step guide to explain to new users of the dYdX Chain how to onboard to Keplr and how to stake DYDX to validators on the dYdX Chain.
+Below, we provide a step-by-step guide to explain to new users of the dYdX Chain how to onboard to Keplr and how to stake DYDX to validators on the dYdX Chain or liquid stake via unaffiliated and independent third parties.
 
 ## Summary
 
@@ -19,6 +19,14 @@ Below, we provide a step-by-step guide to explain to new users of the dYdX Chain
   * [Step 3 - Export secret phrase from the bridge interface](how-to-stake-guide.md#step-3-export-secret-phrase-from-the-bridge-interface)
   * [Step 4 - Set up your Keplr wallet ](how-to-stake-guide.md#step-4-set-up-your-keplr-wallet)
   * [Step 5 - Stake DYDX to dYdX Chain](how-to-stake-guide.md#step-5-stake-dydx-to-dydx-chain)
+
+## Liquid Staking
+
+Liquid staking allows a DYDX holder to stake their DYDX to validators on the dYdX Chain in exchange for liquid staking tokens. dYdX community members have the option to liquid stake via unaffiliated and independent third parties, such as [Stride](https://stride.zone), [Persistence](https://persistence.one/), or [Quicksilver](https://quicksilver.zone/). Persistence and Quicksilver liquid staking solution will be available in the coming weeks.
+
+### Liquid staking via Stride <a href="#h_96bd0fa922" id="h_96bd0fa922"></a>
+
+Stride liquid staking solution is available on Stride's [website](https://app.stride.zone/?chain=DYDX). For more information on liquid staking and Stride, please see Stride's documentation [here](https://docs.stride.zone/docs/getting-started).
 
 ## All Users&#x20;
 
