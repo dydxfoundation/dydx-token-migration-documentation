@@ -117,7 +117,7 @@ Here is an example using the above command format to submit a software upgrade p
 dydxprotocold tx gov submit-proposal software-upgrade \ 
 --upgrade_plan.json \
 --from wallet-1 \ 
---deposit 10000000000000000000000adydx \ 
+--deposit 2000000000000000000000adydx \ 
 --chain-id dydx-mainnet-1 \ 
 --gas 500000 \ 
 --fees 200000000000000adydx \ 
@@ -129,7 +129,7 @@ If `<proposal type>` is left blank, the type will be a Text proposal. Otherwise,
 1. `dydxprotocold` is the command-line interface client that is used to send transactions and query the dYdX Chain and `tx gov submit-proposal software-upgrade` indicates that the transaction is submitting a software upgrade proposal.
 2. `--~/upgrade_plan.json` indicates the file containing the proposal information.
 3. `--from wallet-1` is the account key that pays the transaction fee and deposit amount. This account key must exist in the keychain on your device and it must be an address you control. To register an account in the keychain, you can follow the steps [here](proposal-submission-technical-guide.md#4.-registering-an-account-in-the-keychain).
-4. `--deposit` is the number of DYDX token used as a deposit. The number is divided by 10^18, so `10000000000000000000000adydx` equals to 10,000 DYDX.
+4. `--deposit` is the number of DYDX token used as a deposit. The number is divided by 10^18, so `2000000000000000000000adydx` equals to 2,000 DYDX.
 5. `--chain-id dydx-mainnet-1` is dYdX Chain.
 6. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction.
    * The more content there is in the description of your proposal, the more gas your transaction will consume.
