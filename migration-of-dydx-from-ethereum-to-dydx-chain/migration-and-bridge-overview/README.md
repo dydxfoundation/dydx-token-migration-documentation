@@ -2,9 +2,9 @@
 description: An overview of migration of DYDX from Ethereum to the dYdX Chain.
 ---
 
-# Migration & Bridge Overview
+# 🧱 Migration & Bridge Overview
 
-<figure><img src="../.gitbook/assets/Migration &#x26; Bridge Overview.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Migration &#x26; Bridge Overview.png" alt=""><figcaption></figcaption></figure>
 
 ## Disclaimer
 
@@ -16,7 +16,7 @@ description: An overview of migration of DYDX from Ethereum to the dYdX Chain.
 
 On August 3, 2021, dYdX Foundation [launched](https://dydx.foundation/blog/introducing-dydx-token) DYDX (hereinafter "`ethDYDX`"), a governance token that allows the dYdX community to govern certain aspects of the dYdX Layer 2 protocol on Ethereum (“dYdX v3”) to align incentives between traders, liquidity providers, and partners. The `ethDYDX` token enables a robust ecosystem around governance, rewards, and staking - each of which is designed to drive future growth and decentralization of dYdX v3.
 
-On October 26, 2023, the [dYdX Chain open source software](https://dydx.exchange/blog/dydx-chain-official-release) was deployed and the  first block of the dYdX Chain was created by the dYdX Chain validators.
+On October 26, 2023, the [dYdX Chain open source software](https://dydx.exchange/blog/dydx-chain-official-release) was deployed and the first block of the dYdX Chain was created by the dYdX Chain validators.
 
 The dYdX Chain is a proof-of-stake blockchain network built using the Cosmos SDK and leveraging CometBFT for consensus.&#x20;
 

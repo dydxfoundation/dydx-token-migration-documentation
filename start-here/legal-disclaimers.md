@@ -2,7 +2,7 @@
 description: An overview of legal disclaimers.
 ---
 
-# Legal Disclaimers
+# 📄 Legal Disclaimers
 
 <figure><img src="../.gitbook/assets/Legal Disclaimers.png" alt=""><figcaption></figcaption></figure>
 

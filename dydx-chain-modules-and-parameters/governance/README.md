@@ -2,7 +2,7 @@
 description: An overview of the governance module.
 ---
 
-# Governance
+# 🏛️ Governance
 
 ## Overview
 
@@ -18,9 +18,8 @@ The governance module empowers DYDX holders to propose and vote on proposals, di
   * [Community Spending Proposals](./#community-spending-proposals)
   * [Parameter Change Proposals](./#parameter-change-proposals)
   * [Software Upgrade Proposals](./#software-upgrade-proposals)
+  * [New Market Proposals](./#new-market-proposals)
 * [Proposal Voting Options](./#proposal-voting-options)
-
-
 
 ## Key Concepts and Definitions
 
@@ -30,7 +29,7 @@ The governance module empowers DYDX holders to propose and vote on proposals, di
 * Tallying: After the voting period concludes, the [TallyParams](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L2878-L2880) aggregate the vote results to determine if the proposal was accepted or rejected by the dYdX community.&#x20;
 * Execution: If a proposal passes, the execution process depends on the type of proposal.
 
-More information about the governance module is available [here](https://docs.cosmos.network/v0.46/modules/gov/).
+{% embed url="https://docs.cosmos.network/v0.46/modules/gov/" %}
 
 ## Parameters
 
@@ -60,7 +59,7 @@ If a proposal fails to satisfy the `min_deposit` within the `max_deposit_period`
 
 ## Proposal Types
 
-Governance of the dYdX Chain includes 4 distinct types of proposals: text proposals, parameter change proposals, community spending proposals, and software upgrade proposals.&#x20;
+Governance of the dYdX Chain includes 5 distinct types of proposals: text proposals, parameter change proposals, community spending proposals, software upgrade proposals, and new market proposals.&#x20;
 
 ### _Text Proposals_
 
@@ -68,7 +67,7 @@ Text proposals are votes that occur on-chain without directly triggering any cha
 
 ### _Community Spending Proposals_
 
-Community Spending Proposals involve a request to spend DYDX from the community treasury, community pool or any other community controlled account. The inputs for a Community Spending Proposal are (1) the number of DYDX and (2) the recipient address.
+Community Spending Proposals involve a request to spend DYDX from the community treasury, community pool, or any other community-controlled account. The inputs for a Community Spending Proposal are (1) the number of DYDX and (2) the recipient address.
 
 ### _Parameter Change Proposals_
 
@@ -78,12 +77,19 @@ If a parameter change proposal is successful, the parameter change takes effect 
 
 ### _Software Upgrade Proposals_
 
-The [upgrade module](https://docs.cosmos.network/main/build/modules/upgrade) facilitates smoothly upgrading a live Cosmos chain to a new (breaking) software version. Software Upgrade Proposals need to be created with a `plan`. Such plan outlines when the update will occur (`block height`), the name of the new version of the software, and the `UpgradeHandler` which instructs the upgrade module how to carry out the upgrade (the latest consensus version of each module and other software).
+The [upgrade module](https://docs.cosmos.network/main/build/modules/upgrade) facilitates smoothly upgrading a live Cosmos chain to a new (breaking) software version. Software Upgrade Proposals need to be created with a `plan`. Such a plan outlines when the update will occur (`block height`), the name of the new version of the software, and the `UpgradeHandler` which instructs the upgrade module on how to carry out the upgrade (the latest consensus version of each module and other software).
 
 After the dYdX community accepts a software upgrade proposal there are two important steps:
 
 * Signal - After a `SoftwareUpgradeProposal` is accepted, validators are expected to download and install the new version of the software while continuing to run the previous version. Once a validator has downloaded and installed the upgrade, it will start signaling to the network that it is ready to switch by including the proposal's `proposalID` in its precommits.&#x20;
 * Switch - Once a block contains more than 2/3rd precommits where a common `SoftwareUpgradeProposal` is signaled, all the nodes (including validator nodes and full nodes) are expected to switch to the new version of the software.
+
+### _New Market Proposals_
+
+Any dYdX Community member can propose to add a new market pair to dYdX Chain through the following ways:
+
+* [Market listing widget](https://dydx.trade/#/markets/new): users can search or choose from a list of markets they would like to add, using this tool would require a wallet containing at least 2,000 unstaked DYDX to be used as a proposal deposit. dYdX Trading Inc. ("dYdX Trading") maintains an open-sourced list of market parameters. Information on methodologies and how the compatibility of markets with the software is determined can be found [here](https://docs.dydx.exchange/governance/proposing\_a\_new\_market#example-of-markets-with-robust-oracle-sources).
+* [Programmatic proposal submission](https://docs.dydx.trade/governance/proposing\_a\_new\_market): users can submit a new market proposal through the Command Line Interface, the markets proposed this way are not limited to the markets listed in the widget above, although users are encouraged to adhere to the parameters set out in the documentation. Submitting a new market proposal this way would require a minimum deposit of 400 unstaked DYDX, and the proposal would only enter the voting period when the deposit reaches 2,000 DYDX.
 
 ## Proposal Voting Options
 

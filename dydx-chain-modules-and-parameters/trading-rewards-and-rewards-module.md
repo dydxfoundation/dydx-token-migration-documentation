@@ -2,7 +2,7 @@
 description: An overview of Trading Rewards and the Rewards Module.
 ---
 
-# Trading Rewards and Rewards Module
+# 🎆 Trading Rewards and Rewards Module
 
 ## Overview
 
@@ -73,7 +73,9 @@ In [DIP 2](https://www.mintscan.io/dydx/proposals/2) on the dYdX Chain, the dYdX
 
 ## FAQ
 
-_**How does DYDX vest from the Rewards Vester to the Rewards Treasury?**_
+<details>
+
+<summary><strong>How does DYDX vest from the Rewards Vester to the Rewards Treasury?</strong></summary>
 
 The Vest Module allows the vesting process to happen on the dYdX Chain. The module is responsible for determining the rate of tokens that vest from Vester Accounts to other accounts such as a `community_treasury` and a `rewards_treasury`. The rate of token transfers is linear with respect to time. Thus, block timestamps are used to vest tokens.
 
@@ -81,16 +83,31 @@ The dYdX Community through a governance vote has the ability to create, update, 
 
 Based on the `start_time` and `end_time`, DYDX will vest from the Rewards Vester to the Rewards Treasury at approximately \~0.64 DYDX per second.
 
-_**How much DYDX will I earn in Trading Rewards?**_&#x20;
+</details>
+
+<details>
+
+<summary><strong>How much DYDX will I earn in Trading Rewards?</strong> </summary>
 
 Immediately following the execution of each trade, the dYdX Chain protocol calculates the projected amount of trading rewards related to such trade. The [dydx.trade](https://dydx.trade/) user interface displays the maximum potential rewards for a given trade size before the trade occurs. It's important to note that users can accumulate trading rewards from 0-100% of the net trading fees of a fill, paid in DYDX, but not exceeding this limit.
 
-_**Can the dYdX community change the Trader Rewards formula?**_&#x20;
+</details>
+
+<details>
+
+<summary><strong>Can the dYdX community change the Trader Rewards formula?</strong> </summary>
 
 Yes, the Trading Rewards formula can be modified by the dYdX community through a dYdX Chain Software Upgrade Proposal. If the dYdX community wishes to change any of the parameters outlined in the Parameters section above, e.g. the `fee_multiplier_ppm`, it can be done through a dYdX Chain Parameter Change Proposal.&#x20;
 
-_**How much Trading Rewards will be distributed?**_
+</details>
+
+<details>
+
+<summary><strong>How much Trading Rewards will be distributed?</strong></summary>
 
 In [DIP 2](https://www.mintscan.io/dydx/proposals/2) on the dYdX Chain, the dYdX community voted to credit the dYdX Chain Rewards Vester with 54,077,073 unvested DYDX tokens based on the remaining [allocation](https://docs.dydx.community/dydx-governance/start-here/dydx-allocations) for Trading Rewards from [DIP 29](https://dydx.community/dashboard/proposal/16) on dYdX v3.&#x20;
 
-The dYdX community could choose to transfer more vested DYDX from the dYdX Chain Community Treasury to the Rewards Vester through a Community Spend Proposal, e.g. to increase trading rewards in the future.\
+The dYdX community could choose to transfer more vested DYDX from the dYdX Chain Community Treasury to the Rewards Vester through a Community Spend Proposal, e.g. to increase trading rewards in the future.
+
+</details>
+

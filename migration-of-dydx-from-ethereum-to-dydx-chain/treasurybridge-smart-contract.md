@@ -2,20 +2,26 @@
 description: Overview of the TreasuryBridge Smart Contract
 ---
 
-# TreasuryBridge Smart Contract
+# 🌉 TreasuryBridge Smart Contract
 
-<figure><img src="../../.gitbook/assets/TreasuryBridge Smart Contract.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/TreasuryBridge Smart Contract.png" alt=""><figcaption></figcaption></figure>
+
+## Community Treasury Allocation
+
+The Community Treasury was initially allocated 5.0% of the token supply, with 766,703 ethDYDX vesting in the treasury each epoch. However, as a result of several governance proposals, this allocation gradually increased to 26.1% over time.
+
+In [DIP 29](https://dydx.community/dashboard/proposal/16), the dYdX community voted to reduce Trading & Liquidity Provider Rewards on dYdX v3 by 1/3 for Epoch 30-31. After Epoch 31, there are no Trading & Liquidity Provider Rewards on dYdX v3.&#x20;
 
 ## **TreasuryBridge Contract**
 
-Since the [`TreasuryVester Smart Contract`](https://github.com/dydxfoundation/governance-contracts/blob/master/contracts/treasury/TreasuryVester.sol) is immutable, an updated [`Treasury Smart Contract`](https://github.com/dydxfoundation/governance-contracts/blob/master/contracts/treasury/Treasury.sol), `TreasuryBridge Smart Contract` was developed. The `TreasuryBridge Smart Contract,` if deployed and if the dYdX community decided through dYdX governance, could -
+Since the [`TreasuryVester Smart Contract`](https://github.com/dydxfoundation/governance-contracts/blob/master/contracts/treasury/TreasuryVester.sol) is immutable, an updated [`Treasury Smart Contract`](https://github.com/dydxfoundation/governance-contracts/blob/master/contracts/treasury/Treasury.sol), `TreasuryBridge Smart Contract` was developed. The `TreasuryBridge Smart Contract,` was deployed for each of the community treasury and rewards treasury. The `TreasuryBridge Smart Contract`:
 
-* **One time**: reject new vesting from the `TreasuryVester Smart Contract` by calling the `setRecipient` function on this contract to set the recipient to a burn address, and
-* **Ongoing Basis**: allow governance to bridge any amount of existing tokens in the community treasury or the rewards treasury (the current `Treasury Smart Contract` only allows `transfer()` and `approve()`).
+* **One time**: rejects new vesting from the `TreasuryVester Smart Contract` by calling the `setRecipient` function on this contract to set the recipient to a burn address, and
+* **Ongoing Basis**: allows governance to bridge any amount of existing tokens in the community treasury or the rewards treasury (the current `Treasury Smart Contract` only allows `transfer()` and `approve()`).
 
 Note, the `TreasuryBridge smart contract` is similar to the current corresponding `Treasury Smart Contract` except for the two differences referenced above.&#x20;
 
-Also note, for the dYdX community to effectively migrate `ethDYDX` to the dYdX Chain through dYdX governance, two `TreasuryBridge Smart Contracts` will need need to be deployed - one for the community treasury and one for the rewards treasury.
+
 
 ## Resources
 
@@ -24,15 +30,28 @@ Also note, for the dYdX community to effectively migrate `ethDYDX` to the dYdX C
 
 **V3 Treasury Contracts**
 
-**`24.2%`** (`241,735,862 $DYDX`) of the token supply is allocated to the v3 community treasury for the dYdX community to use on an ongoing basis for contributor grants, community initiatives, liquidity mining, and other programs. Initially,`5.0%` of the token supply (`50,000,000 ethDYDX`) was [allocated](https://docs.dydx.community/dydx-governance/start-here/dydx-allocations) to the community treasury, and 766,703 `ethDYDX` vests in the community treasury each epoch. Currently, 3,787,251 `ethDYDX` vest in the community treasury because several governance proposals resulted in a 3,020,548 `ethDYDX` increase in the amount of `ethDYDX` available to the dYdX community each epoch:
+Currently, **26.1%** of the total token supply of `ethDYDX`, which amounts to `261,133,225 ethDYDX`, is allocated to the Community Treasury. This allocation is designed to sustainably support contributor grants, community initiatives, liquidity mining, and other assorted programs.&#x20;
+
+Initially,`5.0%` of the token supply (`50,000,000 ethDYDX`) was [allocated](https://docs.dydx.community/dydx-governance/start-here/dydx-allocations) to the Community Treasury, and 766,703 `ethDYDX` vested in the community treasury each epoch. The allocation of the Community Treasury increased as a result of several governance proposals.&#x20;
 
 * [DIP 14](https://dydx.community/dashboard/proposal/7) - set the rewards for staking USDC to 0 (383,562 `ethDYDX` per epoch),&#x20;
 * [DIP 16](https://dydx.community/dashboard/proposal/8) - reduce trading rewards by 25% (958,904 `ethDYDX` per epoch),&#x20;
 * [DIP 17](https://dydx.community/dashboard/proposal/9) - set the rewards for staking $DYDX to 0 (383,562 `ethDYDX` per epoch),
 * [DIP 20](https://dydx.community/dashboard/proposal/11) - further reduce trading rewards by 45% (1,294,520 `ethDYDX` per epoch), and
 * [DIP 24](https://github.com/dydxfoundation/dip/blob/master/content/dips/DIP-24.md) - reduce Liquidity Provider Rewards by 50% (575,342 `ethDYDX` per epoch).&#x20;
+*   [DIP 29](https://dydx.community/dashboard/proposal/16) - reduce Trading Rewards and Liquidity Provider Rewards by ⅓ from Epoch 30-32 on dYdX v3 to the following values:
 
+    * Epoch 30:&#x20;
+      * Trading: 1,054,795 $ethDYDX
+      * LP: 383,562 $ethDYDX
+    * Epoch 31:&#x20;
+      * Trading: 527,398 $ethDYDX
+      * LP: 191,781 $ethDYDX
+    * Epoch 32:&#x20;
+      * Trading: 0 $ethDYDX
+      * LP: 0 $ethDYDX
 
+    After Epoch 31, there are no Trading Rewards and Liquidity Provider Rewards on dYdX v3.&#x20;
 
 **Objectives**
 
@@ -42,33 +61,21 @@ Also note, for the dYdX community to effectively migrate `ethDYDX` to the dYdX C
 
 ## Overview
 
-The community treasury will retain `ethDYDX` to use as `ethDYDX` holders decide, whether it be for grants, new liquidity mining pools, or any other program. `ethDYDX` will vest to the community treasury on a continuous basis over the course of five years. A governance vote will be required to spend any `ethDYDX` from the community treasury.
+The community treasury will retain `ethDYDX` to use as `ethDYDX` holders decide whether it be for grants, new liquidity mining pools, or any other program. `ethDYDX` will vest to the community treasury continuously over five years. A governance vote will be required to spend any `ethDYDX` from the community treasury.
 
 If, after five years, governance decides to enact perpetual inflation (at a maximum annual inflation of `2%`), any newly minted ethDYDX will be available to the community treasury.
 
 ## FAQ
 
-### How does $DYDX vest in the Community Treasury?
+### How did $ethDYDX vest in the Community Treasury?
 
-Every second, the Community Treasury Vester (see details [here](https://docs.dydx.community/dydx-governance/resources/technical-overview#governance-architecture-overview)) vests [`0.3169242627`](tel:03169242627) `ethDYDX` to the Community Treasury. Once `ethDYDX` has been vested, calling the `claim` function on the Community Treasury Vester will transfer the vested `ethDYDX` to the Community Treasury. Any dYdX community member can call the `claim` function on Etherscan [here](https://etherscan.io/address/0x08a90Fe0741B7DeF03fB290cc7B273F1855767D8#writeContract) (which would require some ETH for gas fees) to move the vested `ethDYDX` from the Community Treasury Vester to the Community Treasury.
+The Community Treasury Vester (see details [here](https://docs.dydx.community/dydx-governance/resources/technical-overview#governance-architecture-overview)) used to vest [`0.3169242627`](tel:03169242627) `ethDYDX` every second to the Community Treasury. Once `ethDYDX` had been vested, calling the `claim` function on the Community Treasury Vester would transfer the vested `ethDYDX` to the Community Treasury. Any dYdX community member can call the `claim` function on Etherscan [here](https://etherscan.io/address/0x08a90Fe0741B7DeF03fB290cc7B273F1855767D8#writeContract) (which would require some ETH for gas fees) to move the vested `ethDYDX` from the Community Treasury Vester to the Community Treasury.
+
+In DIP 29, the dYdX v3 community voted to set the recipient of the Community Treasury Vester to `0x0000000000000000000000000000000000000002` , to effectively burn all unvested ethDYDX in the Community Treasury Vester.
 
 Please refer to the dYdX Foundation’s [Terms of Use](https://dydx.foundation/terms) for further details on the control of the Community Treasury by the dYdX community.
 
-<figure><img src="../../.gitbook/assets/CT vesting .webp" alt=""><figcaption></figcaption></figure>
-
-### What is the vested balance of the Community Treasury?
-
-dYdX community members can view the vested balance of the Community Treasury [here](https://dydx.shippooor.xyz/). \
-\
-Further, dYdX Foundation publishes for information only the vested balance of the Community Treasury in the [Epoch Review](https://dydx.foundation/blog) at the end of each epoch. In addition to the vested `ethDYDX` in the Community Treasury, the dYdX community can also access the `ethDYDX` accruing in the Rewards Treasury as a result of the votes to:&#x20;
-
-* [DIP 14](https://dydx.community/dashboard/proposal/7) - set the rewards for staking USDC to 0 (383,562 ethDYDX per epoch),&#x20;
-* [DIP 16](https://dydx.community/dashboard/proposal/8) - reduce trading rewards by 25% (958,904 ethDYDX per epoch),&#x20;
-* [DIP 17](https://dydx.community/dashboard/proposal/9) - set the rewards for staking $DYDX to 0 (383,562 ethDYDX per epoch),
-* [DIP 20](https://dydx.community/dashboard/proposal/11) - further reduce trading rewards by 45% (1,294,520 ethDYDX per epoch), and
-* [DIP 24](https://github.com/dydxfoundation/dip/blob/master/content/dips/DIP-24.md) - reduce Liquidity Provider Rewards by 50% (575,342 ethDYDX per epoch).&#x20;
-
-Starting in Epoch 26, 3,595,890 ethDYDX will accrue in the Rewards Treasury each epoch and can be used by the dYdX community with a [governance vote](https://docs.dydx.community/dydx-governance/voting-and-governance/governance-parameters).
+<figure><img src="../.gitbook/assets/CT vesting .webp" alt=""><figcaption></figcaption></figure>
 
 ### Who can submit proposals to spend `ethDYDX` from the Community Treasury?
 
@@ -94,7 +101,7 @@ The TreasuryVester contract was inspired by [Uniswap](https://github.com/Uniswap
 
 
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The Short Timelock can only execute governance-approved actions.
 

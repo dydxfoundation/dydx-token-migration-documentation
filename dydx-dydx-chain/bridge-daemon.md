@@ -2,7 +2,7 @@
 description: An overview of the Bridge Daemon
 ---
 
-# Bridge Daemon
+# 💾 Bridge Daemon
 
 ### High-level Overview&#x20;
 

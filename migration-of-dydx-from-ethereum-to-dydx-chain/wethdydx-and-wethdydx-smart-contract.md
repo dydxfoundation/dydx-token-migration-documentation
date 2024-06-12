@@ -2,7 +2,7 @@
 description: Overview of the wethDYDX Smart Contract
 ---
 
-# wethDYDX Smart Contract
+# 📏 wethDYDX and wethDYDX Smart Contract
 
 <figure><img src="../.gitbook/assets/wethDYDX Smart Contract.png" alt=""><figcaption></figcaption></figure>
 
@@ -109,7 +109,7 @@ Per the original blog [post](https://dydx.foundation/blog/introducing-dydx-token
 * founders, employees, advisors, and consultants of dYdX Trading Inc. and dYdX Foundation (15.3%); and,
 * future employees and consultants of dYdX Trading Inc. or dYdX Foundation (7.0%).
 
-Certain `ethDYDX` tokens held by investors and team members are subject to transfer restrictions. Those `ethDYDX` tokens are referred to as locked tokens (the "**Locked Tokens**"). The transfer restriction shall expire pursuant to a schedule that is publicly available and can be viewed [here](https://dydx.foundation/blog/lock-up-extension).&#x20;
+Certain `ethDYDX` tokens held by investors and team members are subject to transfer restrictions. Those `ethDYDX` tokens are referred to as locked tokens (the "**Locked Tokens**"). The transfer restriction shall expire pursuant to a publicly available schedule and can be viewed [here](https://dydx.foundation/blog/lock-up-extension).&#x20;
 
 Locked Tokens will be released from the transfer restrictions on the same schedule as follows:
 
@@ -123,7 +123,7 @@ All employees and consultants with ethDYDX tokens are also subject to various ve
 
 #### Bridging & Staking Locked Tokens
 
-Locked Tokens can still be bridged from Ethereum to the dYdX Chain  via the `wethDYDX Smart Contract`, and like all other `ethDYDX` token-holders, the locked ethDYDX token-holders will be entitled to receive:&#x20;
+Locked Tokens can still be bridged from Ethereum to the dYdX Chain via the `wethDYDX Smart Contract`, and like all other `ethDYDX` token-holders, the locked ethDYDX token-holders will be entitled to receive:&#x20;
 
 1. `wethDYDX`, on a 1-1 proportional basis, on Ethereum, and&#x20;
 2. `DYDX` tokens, on a 1-1 proportional basis, on the dYdX Chain. &#x20;

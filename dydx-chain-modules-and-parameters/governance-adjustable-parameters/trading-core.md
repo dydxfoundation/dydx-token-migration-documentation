@@ -8,18 +8,11 @@ The current size of the insurance fund can be viewed [here](https://www.mintscan
 
 ### Deleveraging
 
-In the event that the insurance fund is depleted, positions with the most profit and leverage may be used to offset negative-balance accounts, in order to maintain the stability of the system.&#x20;
+If the insurance fund is depleted, positions with the highest profit and leverage may be used to offset negative-balance accounts, ensuring system stability. This process, known as **deleveraging**, is a last-resort feature in perpetual contracts.&#x20;
 
-Deleveraging is a feature made available by the perpetual contract, which is used as a last resort to close underwater positions if the insurance fund is depleted. Deleveraging works similarly to “auto-deleveraging” in other high-leverage futures and perpetual markets and is a mechanism that requires profitable traders to contribute part of their profits to offset underwater accounts.
+It works similarly to "auto-deleveraging" in other markets, requiring profitable traders to contribute profits to offset underwater accounts. Deleveraging is used only when the insurance fund is depleted and prioritizes high-profit, high-leverage accounts. This approach reduces uncertainty for traders at lower risk levels compared to a socialized loss mechanism. The most highly leveraged offsetting accounts are deleveraged first.
 
-Deleveraging will only be used if the insurance fund is depleted.
-
-Deleveraging is performed by automatically reducing the positions of some traders—prioritizing accounts with a combination of high profit and high leverage—and using their profits to offset underwater accounts.
-
-Deleveraging is chosen over a socialized loss mechanism to reduce the uncertainty faced by traders trading at lower risk levels.
-
-The most highly leveraged offsetting accounts will be deleveraged first.
-
+{% hint style="info" %}
 #### _Deleveraging Example_
 
 Assume an initial margin requirement of 10% and a maintenance margin requirement of 7.5%.
@@ -29,6 +22,7 @@ Trader A deposits 1000 USDC, then opens a long position of 1 BTC at a price of 2
 The insurance fund is already depleted due to recent price swings, so deleveraging kicks in. Trader B, whose current balance is 10000 USDC, -9 BTC, is selected as the counterparty, on the basis of B’s profit and leverage, and the fact that B’s short position can offset A’s long position.
 
 Trader B receives A’s entire balance, leaving A with zero balance, and bringing B’s total balance to 9000 USDC, -8 BTC. Trader B’s nominal loss due to deleveraging is 100 USDC, at an index price of 900 USDC. Trader B’s margin percentage increased (and leverage decreased) as a result of deleveraging, from 23.46% to 25%.
+{% endhint %}
 
 ## Liquidations Config
 

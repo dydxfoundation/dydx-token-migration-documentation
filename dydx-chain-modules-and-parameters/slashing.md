@@ -2,7 +2,7 @@
 description: An overview of the slashing module.
 ---
 
-# Slashing
+# ⚔️ Slashing
 
 ## Overview
 
@@ -67,10 +67,10 @@ string validator_addr = 1;
 
 ## Social Slashing
 
-The extraction of MEV (Maximal Extractable Value) by validators can undermine a fair and transparent trading environment. MEV refers to the profit a dishonest validator can gain by censoring and/or re-ordering orders and cancellations to their advantage. Validators could take advanatge of the architecture of the dYdX Chain - an in-memory orderbook design - to manipulate, re-order, or censor trades before suggesting a new block for profit extraction, resulting in trades executing at worse prices relative to the best price possible and cancellations potentially being ignored.&#x20;
+The MEV (Maximal Extractable Value) extraction by validators can undermine a fair and transparent trading environment. MEV refers to the profit a dishonest validator can gain by censoring and/or re-ordering orders and cancellations to their advantage. Validators could take advantage of the architecture of the dYdX Chain - an in-memory orderbook design - to manipulate, re-order, or censor trades before suggesting a new block for profit extraction, resulting in trades executing at worse prices relative to the best price possible and cancellations potentially being ignored.&#x20;
 
 To show how much MEV value could be extracted by each validator, dYdX Trading, Inc. ("dYdX Trading") and Skip Protocol have collaborated to create a [dashboard](https://dydx.skip.money/) that displays data on orderbook discrepancies.
 
-Currently, there is no protocol level solution to mitigate MEV on dYdX Chain, despite MEV extraction being considered a harmful validator behavior. However, the dYdX community through a governance vote could approve the implementation of a social slashing framework to penalize validators engaged in MEV extraction.
+Currently, there is no protocol-level solution to mitigate MEV on the dYdX Chain, despite MEV extraction being considered a harmful validator behavior. However, the dYdX community, through a governance vote, could approve the implementation of a social slashing framework to penalize validators engaged in MEV extraction.
 
 \

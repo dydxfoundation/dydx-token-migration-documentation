@@ -2,9 +2,9 @@
 description: An overview of the x/bridge module
 ---
 
-# x/bridge module
+# 🌉 x/bridge module
 
-The [`x/bridge module`](https://github.com/dydxprotocol/v4-chain/tree/main/protocol/x/bridge) is responsible for receiving bridged tokens from the Ethereum blockchain. It has an associated [`daemon`](https://github.com/dydxprotocol/v4-chain/tree/main/protocol/daemons/bridge) that knows about all “bridge events” that happened on Ethereum by making RPC calls to an Ethereum full node. Bridge events are logs emitted by the bridging smart-contract on Ethereum. Each event has a unique, sequentially-increasing `id`.
+The [`x/bridge module`](https://github.com/dydxprotocol/v4-chain/tree/main/protocol/x/bridge) ([`dydx1zlefkpe3g0vvm9a4h0jf9000lmqutlh9jwjnsv`](https://www.mintscan.io/dydx/address/dydx1zlefkpe3g0vvm9a4h0jf9000lmqutlh9jwjnsv)) is responsible for receiving bridged tokens from the Ethereum blockchain. It has an associated [`daemon`](https://github.com/dydxprotocol/v4-chain/tree/main/protocol/daemons/bridge) that knows about all “bridge events” that happened on Ethereum by making RPC calls to an Ethereum full node. Bridge events are logs emitted by the bridging smart-contract on Ethereum. Each event has a unique, sequentially-increasing `id`.
 
 ## Concepts&#x20;
 
@@ -291,13 +291,6 @@ func (k Keeper) UpdateProposeParams(
 ```
 
 
-
-## Expected Keepers
-
-* `x/bank`
-  * In order to mint new tokens.&#x20;
-* `x/delaymsg`
-  * In order to delay the completion of bridge events.
 
 ***
 

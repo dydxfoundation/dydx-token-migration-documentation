@@ -1,6 +1,6 @@
 # Market Tiers
 
-Currently the following markets are in the following liquidity tiers:
+Currently, the following markets are in the following liquidity tiers:
 
 | Liquidity Tier | Market Pair                                                                                                                              |                                                                                                                                           |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |

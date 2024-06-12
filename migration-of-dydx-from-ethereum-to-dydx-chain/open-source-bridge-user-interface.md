@@ -2,7 +2,7 @@
 description: Overview of the Open-Source Bridge User Interface
 ---
 
-# Open-Source Bridge User Interface
+# 👓 Open-Source Bridge User Interface
 
 <figure><img src="../.gitbook/assets/Open-Source Bridge User Interface.png" alt=""><figcaption></figcaption></figure>
 

@@ -5,7 +5,7 @@ description: >-
   Parameter Change Proposals.
 ---
 
-# Governance Adjustable Parameters
+# ⛓️ Governance Adjustable Parameters
 
 ## Overview
 

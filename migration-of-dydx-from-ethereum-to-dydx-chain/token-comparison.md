@@ -4,7 +4,7 @@ description: >-
   wethDYDX, and dYdX Chain DYDX
 ---
 
-# Token Comparison
+# 🪙 Token Comparison
 
 <figure><img src="../.gitbook/assets/Overview and architecture" alt=""><figcaption></figcaption></figure>
 

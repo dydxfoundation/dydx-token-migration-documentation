@@ -2,13 +2,9 @@
 description: An overview of DYDX (dYdX Chain)
 ---
 
-# Introduction
+# ⚙️ Introduction
 
-After an ethDYDX holder interacts with the `wethDYDX Smart Contract`, dYdX Chain validators can also read and ingest the information in the `wethDYDX Smart Contract` such that corresponding DYDX can be distributed to users by validators on the dYdX Chain once there is confirmation that Step 1 above is complete and the ethDYDX is permanently locked in the `wethDYDX Smart Contract`.&#x20;
-
-If a user interacts with the `wethDYDX Smart Contract,`then each dYdX Chain validator participating in the consensus process would read the event information of the `wethDYDX Smart Contract` and allocate DYDX tokens on the dYdX Chain to a given user’s dYdX Chain address based on the corresponding amount (1-1) of `ethDYDX` tokens that the user sent to the `wethDYDX Smart Contract`.&#x20;
-
-
+After an ethDYDX holder interacts with the wethDYDX Smart Contract, dYdX Chain validators can read and ingest the information from the contract. Once Step 1 is complete and ethDYDX is permanently locked in the wethDYDX Smart Contract, validators can distribute the corresponding amount of DYDX (1-1) to users on the dYdX Chain.&#x20;
 
 <figure><img src="../.gitbook/assets/Bridging Step 3(b) NEW.png" alt=""><figcaption></figcaption></figure>
 
@@ -16,9 +12,7 @@ If a user interacts with the `wethDYDX Smart Contract,`then each dYdX Chain vali
 
 #### Validator's Reading of the Logs
 
-Each dYdX Chain validator will have to understand which events have or haven’t occurred on the Ethereum blockchain. Validators can do this by making RPC calls to an Ethereum node to get relevant logs. dYdX Chain validators should only process `finalized` blocks.
-
-Validators will need to provide Ethereum RPC endpoint as a flag in the start command, instead of in a config file. Eventually, the URL of the node can be stored in the configuration file of the given validator. Ideally, this node is run by the validator themselves, but it could also be a hosted node from Alchemy or Infura. Ideally, to achieve a decentralized network, no more than 1/3 of the stake weight should use any one centralized service.&#x20;
+dYdX Chain validators must track Ethereum blockchain events by querying an Ethereum node through RPC calls. They should process only finalized blocks. Validators will specify the Ethereum RPC endpoint in the start command, with the option to store the URL in a configuration file. The node can be self-run or a hosted node from Alchemy or Infura, but for decentralization, no more than 1/3 of the stake weight should rely on any one centralized service.
 
 #### Adding the Information to State
 

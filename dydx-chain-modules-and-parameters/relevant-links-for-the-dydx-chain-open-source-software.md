@@ -2,7 +2,7 @@
 description: An overview of relevant links for the dYdX Chain Open Source Software
 ---
 
-# Relevant Links for the dYdX Chain Open Source Software
+# 🖇️ Relevant Links for the dYdX Chain Open Source Software
 
 **dYdX Chain Open-source Code**
 

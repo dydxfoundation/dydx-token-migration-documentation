@@ -2,7 +2,7 @@
 description: An overview of the dYdX Chain Community Treasury.
 ---
 
-# Community Treasury
+# 🏦 Community Treasury
 
 ## Overview
 
@@ -27,7 +27,24 @@ The Community Treasury was created with the following objectives:
 
 ## Community Treasury
 
-In [DIP 29](https://dydx.community/dashboard/proposal/16) on dYdX v3, the dYdX community voted to migrate 40,703,630 vested ethDYDX from the Rewards Treasury and 39,788,640 vested ethDYDX from the Community Treasury to the dYdX Chain Community Treasury. In addition to the 80,492,270 DYDX from the dYdX v3 Rewards Treasury and Community Treasury, DYDX vests every second from the community\_vester to the community\_treasury.
+Currently, **26.1%** of the total token supply of `ethDYDX`, which amounts to `261,133,225 ethDYDX`, is allocated to the Community Treasury. This allocation is designed to sustainably support contributor grants, community initiatives, liquidity mining, and other assorted programs.&#x20;
+
+Initially,`5.0%` of the token supply (`50,000,000 ethDYDX`) was [allocated](https://docs.dydx.community/dydx-governance/start-here/dydx-allocations) to the Community Treasury, and 766,703 `ethDYDX` vests in the community treasury each epoch. Currently, 3,787,251 `ethDYDX` vest in the community treasury because several governance proposals resulted in a 3,020,548 `ethDYDX` increase in the amount of `ethDYDX` available to the dYdX community each epoch:
+
+* [DIP 14](https://dydx.community/dashboard/proposal/7) - set the rewards for staking USDC to 0 (383,562 `ethDYDX` per epoch),&#x20;
+* [DIP 16](https://dydx.community/dashboard/proposal/8) - reduce trading rewards by 25% (958,904 `ethDYDX` per epoch),&#x20;
+* [DIP 17](https://dydx.community/dashboard/proposal/9) - set the rewards for staking $DYDX to 0 (383,562 `ethDYDX` per epoch),
+* [DIP 20](https://dydx.community/dashboard/proposal/11) - further reduce trading rewards by 45% (1,294,520 `ethDYDX` per epoch), and
+* [DIP 24](https://github.com/dydxfoundation/dip/blob/master/content/dips/DIP-24.md) - reduce Liquidity Provider Rewards by 50% (575,342 `ethDYDX` per epoch).&#x20;
+*   [DIP 29](https://dydx.community/dashboard/proposal/16) - reduce Liquidity Provider Rewards by ⅓ from Epoch 30-32 on dYdX v3 to the following values:
+
+    * Epoch 30: 383,562 $ethDYDX
+    * Epoch 31: 191,781 $ethDYDX
+    * Epoch 32: 0 $ethDYDX
+
+    After Epoch 31, there will not be any Liquidity Provider Rewards on dYdX v3. In DIP 29, the dYdX community voted to reduce Trading Rewards by ⅓ from Epoch 30-32 on dYdX v3, however the remaining allocation of Trading Rewards was migrated to the dYdX Chain for Trading Rewards.&#x20;
+
+In [DIP 29](https://dydx.community/dashboard/proposal/16) on dYdX v3, the dYdX community also voted to migrate 40,703,630 vested ethDYDX from the Rewards Treasury and 39,788,640 vested ethDYDX from the Community Treasury to the dYdX Chain Community Treasury. In addition to the 80,492,270 DYDX from the dYdX v3 Rewards Treasury and Community Treasury, DYDX vests every second from the community\_vester to the community\_treasury.
 
 ## Community Vester
 
@@ -35,13 +52,19 @@ In [DIP 2](https://www.mintscan.io/dydx/proposals/2) on the dYdX Chain, the dYdX
 
 ## FAQ
 
-_**How to Submit a Community Spending Proposal?**_
+<details>
+
+<summary><strong>How to Submit a Community Spending Proposal?</strong></summary>
 
 Any dYdX community member with enough unstaked DYDX tokens to satisfy the `min_initial_deposit_ratio` may submit a Community Spending proposal on dYdX Chain. A governance vote will be required to spend any DYDX from the Community Treasury.&#x20;
 
 To submit a proposal, please follow the steps laid out on the [Proposal Lifecycle](https://docs.dydx.community/dydx-token-migration/dydx-chain-modules-and-parameters/governance/proposal-lifecycle). The main inputs for a Community Spending Proposal are (1) the number of DYDX and (2) the recipient address.
 
-_**How does DYDX vest from the Community Vester to the Community Treasury?**_
+</details>
+
+<details>
+
+<summary><strong>How does DYDX vest from the Community Vester to the Community Treasury?</strong></summary>
 
 The Vest Module allows the vesting process to happen on the dYdX Chain. The module is responsible for determining the rate of tokens that vest from Vester Accounts to other accounts such as a `community_treasury` and a `rewards_treasury`. The rate of token transfers is linear with respect to time. Thus, block timestamps are used to vest tokens.
 
@@ -49,6 +72,13 @@ The dYdX Community through a governance vote has the ability to create, update, 
 
 Based on the `start_time` and `end_time`, DYDX will vest from the Community Vester to the Community Treasury at approximately \~2.04 DYDX per second.
 
-_**What types of proposals can be submitted to the Community Treasury?**_
+</details>
 
-A community-managed treasury opens up a world of possibilities. We hope to see various experiments and initiatives, including ecosystem grants, which can foster dYdX Chain's ecosystem growth.\
+<details>
+
+<summary><strong>What types of proposals can be submitted to the Community Treasury?</strong></summary>
+
+A community-managed treasury opens up a world of possibilities. We hope to see various experiments and initiatives, including ecosystem grants, which can foster dYdX Chain's ecosystem growth.
+
+</details>
+
