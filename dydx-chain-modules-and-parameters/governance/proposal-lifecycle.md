@@ -13,9 +13,9 @@ Below we outline the flow of dYdX Chain governance, from inception of the idea t
 ## Summary
 
 * [ Forum Discussion](proposal-lifecycle.md#id-0.-forum-discussion)
-* [(Off-chain) DRC Creation](proposal-lifecycle.md#1.-off-chain-drc-creation)
-* [(Off-chain) DRC Discussion and Feedback](proposal-lifecycle.md#2.-off-chain-drc-discussion-and-feedback)
-* [(Off-chain) DIP Creation](proposal-lifecycle.md#3.-off-chain-dip-creation)
+* [(Off-chain) DRC Creation](proposal-lifecycle.md#id-1.-off-chain-drc-creation)
+* [(Off-chain) DRC Discussion and Feedback](proposal-lifecycle.md#id-2.-off-chain-drc-discussion-and-feedback)
+* [(Off-chain) DIP Creation](proposal-lifecycle.md#id-3.-off-chain-dip-creation)
 * [(On-chain) Submitting a Proposal](proposal-lifecycle.md#4.-on-chain-submitting-a-proposal)
 * [(On-chain) Proposal Deposits](proposal-lifecycle.md#5.-on-chain-proposal-deposits)
 * [(On-chain) DIP Voting](proposal-lifecycle.md#6.-on-chain-dip-voting)
