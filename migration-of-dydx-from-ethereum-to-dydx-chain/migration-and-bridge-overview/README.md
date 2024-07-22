@@ -20,7 +20,7 @@ On October 26, 2023, the [dYdX Chain open source software](https://dydx.exchange
 
 The dYdX Chain is a proof-of-stake blockchain network built using the Cosmos SDK and leveraging CometBFT for consensus.&#x20;
 
-The dYdX community, through dYdX governance, voted ([Snapshot](https://snapshot.org/#/dydxgov.eth/proposal/0x17026e18317dc29fe745d3130246a83b1485612da9c97e7261e8f659cf33663c) and [on-chain](https://dydx.community/dashboard/proposal/15)) in favor of adopting DYDX as the Layer 1 token of the dYdX Chain for staking to validators in order to secure the chain and for stakers of the L1 token to [govern](https://dydx.exchange/blog/v4-deep-dive-governance)
+The dYdX community, through dYdX governance, voted ([Snapshot](https://snapshot.org/#/dydxgov.eth/proposal/0x17026e18317dc29fe745d3130246a83b1485612da9c97e7261e8f659cf33663c) and [on-chain](https://dydx.community/dashboard/proposal/15)) in favor of adopting DYDX as the Layer 1 token of the dYdX Chain for staking to validators in order to secure the chain and for stakers of the L1 token to [govern](https://dydx.exchange/blog/v4-deep-dive-governance) the network.
 
 When interacted with, the one-way bridge smart contract, the `wethDYDX Smart Contract,`  would carry out the following functions in a fully permissionless and automated manner:
 

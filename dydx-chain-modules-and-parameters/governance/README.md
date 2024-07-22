@@ -102,7 +102,7 @@ The voting options for governance proposals on dYdX Chain are:&#x20;
 
 ## Expedited Proposals
 
-A proposal can be expedited, which shortens the voting duration to 1 day and sets a higher tally threshold by default. If the expedited proposal does not meet the threshold within the shortened voting period, it is converted to a regular proposal and the voting restarts under standard conditions.
+A proposal can be expedited, which shortens the voting duration to 1 day and sets a higher tally threshold by default. The expedited proposal threshold is `0.75` (75%) and the quorum is `0.334` (33.4%). If the expedited proposal does not meet the threshold within the shortened voting period, it is converted to a regular proposal, and the voting restarts under standard conditions.
 
 {% hint style="info" %}
 For example, if an expedited proposal starts on July 1st, the vote would end on July 5th if the expedited proposal fails to meet the higher tally threshold by July 3rd.

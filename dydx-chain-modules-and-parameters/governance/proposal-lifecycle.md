@@ -41,7 +41,7 @@ The DRC should cover all the information of the potential final DIP.
 
 ## 2. (Off-chain) DRC Discussion and Feedback&#x20;
 
-Once posted on the dYdX governance forum, the proposer should make a reasonable effort to respond to questions and incorporate constructive feedback to further improve the DRC. The goal of the DRC Discussion and Feedback step is to establish a rough consensus before a vote starts.
+Once posted on the dYdX governance forum, the proposer should reasonably respond to questions and incorporate constructive feedback to further improve the DRC. The DRC Discussion and Feedback step aims to establish a rough consensus before a vote starts.
 
 While a rigid timeline is unnecessary, four days likely makes sense to ensure the dYdX community has sufficient time to review and comment on the DRC.
 
@@ -49,8 +49,8 @@ While a rigid timeline is unnecessary, four days likely makes sense to ensure th
 
 Before submitting a transaction to create a governance proposal, the prospective proposer must create a `json` file containing relevant information for the governance proposal. Depending on the type of proposal, the contents of the `json` file will differ.&#x20;
 
-1. Text Proposals: the file should contain title, description and deposit (in aDYDX units).
-2. Community Spending Proposals: the file should contain title, description, recipient, number of tokens, and deposit (in `aDYDX` units).
+1. Text Proposals: the file should contain a title, description, and deposit (in aDYDX units).
+2. Community Spending Proposals: the file should contain the title, description, recipient, number of tokens, and deposit (in `aDYDX` units).
 3. Parameter Change Proposals: the file should contain title, description, changes, subspace (module with the parameter that is being changed), key (the parameter that is being changed), value (value of the parameter that will be changed by the governance mechanism), and deposit (in `aDYDX` units).
 4. Software Upgrade Proposals: the file should contain title, description, deposit and plan.&#x20;
    * The plan outlines when the update will occur (block height), the name of the new version of the software, and the `UpgradeHandler` which instructs the upgrade module how to carry out the upgrade (the latest consensus version of each module and other software).
@@ -104,7 +104,6 @@ An on-chain DIP may be submitted by a dYdX community member using the following 
 dydxprotocold tx gov submit-proposal <proposal type> \
 -- <json file> \
 --from <submitter address> \
---deposit <deposit in DYDX> \
 --chain-id <chain id> \
 --gas <max gas allocated> \
 --fees <fees allocated> \
@@ -117,11 +116,10 @@ Here is an example using the above command format to submit a software upgrade p
 dydxprotocold tx gov submit-proposal software-upgrade \ 
 --upgrade_plan.json \
 --from wallet-1 \ 
---deposit 2000000000000000000000adydx \ 
 --chain-id dydx-mainnet-1 \ 
 --gas 500000 \ 
---fees 200000000000000adydx \ 
---node https://rpc.dydx.exchange:443 \
+--fees 12500ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5 \ 
+--node https://rpc-dydx.imperator.co:443/ \
 ```
 
 If `<proposal type>` is left blank, the type will be a Text proposal. Otherwise, it can be set to `param-change`, `software-upgrade`, or `community-treasury-spend`.&#x20;
@@ -129,9 +127,8 @@ If `<proposal type>` is left blank, the type will be a Text proposal. Otherwise,
 1. `dydxprotocold` is the command-line interface client that is used to send transactions and query the dYdX Chain and `tx gov submit-proposal software-upgrade` indicates that the transaction is submitting a software upgrade proposal.
 2. `--~/upgrade_plan.json` indicates the file containing the proposal information.
 3. `--from wallet-1` is the account key that pays the transaction fee and deposit amount. This account key must exist in the keychain on your device and it must be an address you control. To register an account in the keychain, you can follow the steps [here](proposal-submission-technical-guide.md#4.-registering-an-account-in-the-keychain).
-4. `--deposit` is the number of DYDX token used as a deposit. The number is divided by 10^18, so `2000000000000000000000adydx` equals to 2,000 DYDX.
-5. `--chain-id dydx-mainnet-1` is dYdX Chain.
-6. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction.
+4. `--chain-id dydx-mainnet-1` is dYdX Chain.
+5. `--gas 500000` is the maximum amount of gas permitted to be used to process the transaction.
    * The more content there is in the description of your proposal, the more gas your transaction will consume.
    * If this number isn't high enough and there isn't enough gas to process your transaction, the transaction will fail.
    * The transaction will only use the amount of gas needed to process the transaction.
@@ -147,11 +144,11 @@ dydxprotocold tx gov submit-proposal
 gas estimate: 837840
 ```
 
-7. `--fees` is a flat-rate incentive for a validator to process your transaction.
+7. `--fees` is a flat-rate incentive for a validator to process your transaction, it is denominated in USDC (`ibc/8E27BA2D5493AF5636760E354E46004562C46AB7EC0CC4C1CA14E9E20E2545B5`).
 
 * The network still accepts zero fees, but many nodes will not transmit your transaction to the network without a minimum fee.
 * Many nodes use a minimum fee to disincentivize transaction spamming.
-* The number is divided by 10^18, `200000000000000adydx` is equal to 0.0002 DYDX.
+* The number is divided by 10^18.
 
 8. `--node` is RPC endpoint address that can be found [here](https://docs.dydx.trade/networks/network1/resources). Remember to append `:443` to the end of the RPC URI to access the endpoint properly and securely.
 
