@@ -16,7 +16,7 @@ Trading Rewards will be distributed to users who trade on dYdX Chain based on th
 | [denom](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3757)                | adydx             | The token that Trading Rewards are funded in                                             |
 | [denom\_exponent](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3758)      | -18               | The decimals of the Trading Rewards token                                                |
 | [market\_id](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3759)           | 1000001           | The market which tracks the oracle price of the token that Trading Rewards are funded in |
-| [fee\_multiplier\_ppm](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3760) | 0.33              | The protocol constant “ C” for the Trading Rewards                                       |
+| [fee\_multiplier\_ppm](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3760) | 0.90              | The protocol constant “ C” for the Trading Rewards                                       |
 
 ## Module Accounts
 
