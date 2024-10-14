@@ -1,10 +1,10 @@
 ---
-description: An overview of relevant links for the dYdX Chain Open Source Software
+description: An overview of relevant links for the dYdX Chain Open Source Software.
 ---
 
 # 🖇️ Relevant Links for the dYdX Chain Open Source Software
 
-**dYdX Chain Open-source Code**
+## **dYdX Chain Open-source Code**
 
 * [dYdX Chain open source software](https://dydx.exchange/blog/dydx-chain-official-release) - release of the completed, audited and open-sourced dYdX Chain software.
 * [v4-chain](https://github.com/dydxprotocol/v4-chain) - Validator and indexer code, protobuf definitions, scripts to generate Python and Javascript libraries using Telescope
@@ -16,7 +16,7 @@ description: An overview of relevant links for the dYdX Chain Open Source Softwa
 * [v4-testnets](https://github.com/dydxprotocol/v4-testnets) - Coordination repos for previous testnets
 * [v4-infrastructure](https://github.com/dydxprotocol/v4-infrastructure) - Terraform for indexer deployments, metrics ingestor, indexer dashboards and monitors
 
-**Milestones**
+## **Milestones**
 
 * [https://dydx.exchange/blog/why-decentralization-matters ](https://dydx.exchange/blog/why-decentralization-matters)
 * [https://dydx.exchange/blog/v4-milestone-3-is-complete ](https://dydx.exchange/blog/v4-milestone-3-is-complete)
@@ -27,7 +27,7 @@ description: An overview of relevant links for the dYdX Chain Open Source Softwa
 * [Public Testnet (v4 Milestone 4 is Complete)](https://dydx.exchange/blog/public-testnet)
 * [Public Testnet Update](https://dydx.exchange/blog/public-testnet-update)
 
-**Deep Dives**
+## **Deep Dives**
 
 * [v4 Deep Dive: Technical Architecture](https://dydx.exchange/blog/v4-technical-architecture-overview)
 * [v4 Deep Dive: Indexer ](https://dydx.exchange/blog/v4-deep-dive-indexer)
@@ -36,8 +36,11 @@ description: An overview of relevant links for the dYdX Chain Open Source Softwa
 * [Governance Functionality](https://v4-teacher.vercel.app/governance/governance\_functionality)
 * [v4 Deep Dive: Rewards and Parameters](https://dydx.exchange/blog/v4-rewards-and-parameters)
 
-**MEV**
+## **MEV**
 
 * [Distinguishing MEV from Expected Noise](https://dydx.exchange/blog/distinguishing-mev-from-expected-noise)
 * [An update on MEV - Catching a Bad Validator](https://dydx.exchange/blog/update-on-mev)
 * [dYdX V4 & MEV](https://dydx.exchange/blog/dydx-v4-and-mev)
+
+
+

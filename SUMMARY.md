@@ -49,3 +49,4 @@
 * [🏦 Community Treasury](dydx-chain-modules-and-parameters/community-treasury/README.md)
   * [Community Pool](dydx-chain-modules-and-parameters/community-treasury/community-pool.md)
 * [🖇️ Relevant Links for the dYdX Chain Open Source Software](dydx-chain-modules-and-parameters/relevant-links-for-the-dydx-chain-open-source-software.md)
+* [📊 Relevant Data Sources and Dashboards for dYdX Chain](dydx-chain-modules-and-parameters/relevant-data-sources-and-dashboards-for-dydx-chain.md)
