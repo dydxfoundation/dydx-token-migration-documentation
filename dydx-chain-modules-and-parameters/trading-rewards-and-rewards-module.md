@@ -16,7 +16,7 @@ Trading Rewards will be distributed to users who trade on dYdX Chain based on th
 | [denom](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3757)                | adydx             | The token that Trading Rewards are funded in                                             |
 | [denom\_exponent](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3758)      | -18               | The decimals of the Trading Rewards token                                                |
 | [market\_id](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3759)           | 1000001           | The market which tracks the oracle price of the token that Trading Rewards are funded in |
-| [fee\_multiplier\_ppm](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3760) | 0.90              | The protocol constant “ C” for the Trading Rewards                                       |
+| [fee\_multiplier\_ppm](https://github.com/dydxopsdao/networks/blob/fd7ee6e63e7e4b3ffab4fe600ac7cdb77c28d88d/dydx-mainnet-1/genesis.json#L3760) | 0.50              | The protocol constant “ C” for the Trading Rewards                                       |
 
 ## Module Accounts
 
@@ -89,7 +89,7 @@ Based on the `start_time` and `end_time`, DYDX will vest from the Rewards Vester
 
 <summary><strong>How much DYDX will I earn in Trading Rewards?</strong> </summary>
 
-Immediately following the execution of each trade, the dYdX Chain protocol calculates the projected amount of trading rewards related to such trade. The [dydx.trade](https://dydx.trade/) user interface displays the maximum potential rewards for a given trade size before the trade occurs. It's important to note that users can accumulate trading rewards from 0-100% of the net trading fees of a fill, paid in DYDX, but not exceeding this limit.
+Immediately following the execution of each trade, the dYdX Chain protocol calculates the projected amount of trading rewards related to such trade. The [dydx.trade](https://dydx.trade/) user interface displays the maximum potential rewards for a given trade size before the trade occurs. It's important to note that users can accumulate trading rewards up to 50% of the net trading fees of a fill, paid in DYDX, but not exceeding this limit.
 
 </details>
 
