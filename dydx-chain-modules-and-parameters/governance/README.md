@@ -84,13 +84,6 @@ After the dYdX community accepts a software upgrade proposal there are two impor
 * Signal - After a `SoftwareUpgradeProposal` is accepted, validators are expected to download and install the new version of the software while continuing to run the previous version. Once a validator has downloaded and installed the upgrade, it will start signaling to the network that it is ready to switch by including the proposal's `proposalID` in its precommits.&#x20;
 * Switch - Once a block contains more than 2/3rd precommits where a common `SoftwareUpgradeProposal` is signaled, all the nodes (including validator nodes and full nodes) are expected to switch to the new version of the software.
 
-### _New Market Proposals_
-
-Any dYdX Community member can propose to add a new market pair to dYdX Chain through the following ways:
-
-* [Market listing widget](https://dydx.trade/#/markets/new): users can search or choose from a list of markets they would like to add, using this tool would require a wallet containing at least 2,000 unstaked DYDX to be used as a proposal deposit. dYdX Trading Inc. ("dYdX Trading") maintains an open-sourced list of market parameters. Information on methodologies and how the compatibility of markets with the software is determined can be found [here](https://docs.dydx.exchange/governance/proposing\_a\_new\_market#example-of-markets-with-robust-oracle-sources).
-* [Programmatic proposal submission](https://docs.dydx.trade/governance/proposing\_a\_new\_market): users can submit a new market proposal through the Command Line Interface, the markets proposed this way are not limited to the markets listed in the widget above, although users are encouraged to adhere to the parameters set out in the documentation. Submitting a new market proposal this way would require a minimum deposit of 400 unstaked DYDX, and the proposal would only enter the voting period when the deposit reaches 2,000 DYDX.
-
 ## Proposal Voting Options
 
 The voting options for governance proposals on dYdX Chain are:&#x20;
