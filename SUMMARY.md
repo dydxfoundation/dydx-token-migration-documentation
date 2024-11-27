@@ -20,3 +20,8 @@
 * [⚙️ Introduction](dydx-dydx-chain/introduction.md)
 * [🌉 x/bridge module](dydx-dydx-chain/x-bridge-module.md)
 * [💾 Bridge Daemon](dydx-dydx-chain/bridge-daemon.md)
+
+## EXTERNAL LINKS
+
+* [wethDYDX Bridge Stats](https://dune.com/dydx-foundation/wethdydx-bridge)
+* [Bridge ethDYDX to DYDX](https://bridge.dydx.trade/)

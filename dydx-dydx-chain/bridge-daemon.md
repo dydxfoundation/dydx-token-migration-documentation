@@ -20,9 +20,9 @@ The [`Bridge Daemon`](https://github.com/dydxprotocol/v4-chain/tree/main/protoco
 
 ## Related Module
 
-[x-bridge-module.md](x-bridge-module.md "mention")
-
-
+{% content-ref url="x-bridge-module.md" %}
+[x-bridge-module.md](x-bridge-module.md)
+{% endcontent-ref %}
 
 ## Daemon
 
