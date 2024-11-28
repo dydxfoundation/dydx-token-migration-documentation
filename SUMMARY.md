@@ -8,7 +8,7 @@
 ## Migration of DYDX from Ethereum to dYdX Chain
 
 * [🧱 Migration & Bridge Overview](migration-of-dydx-from-ethereum-to-dydx-chain/migration-and-bridge-overview/README.md)
-  * [How to Bridge Guide](migration-of-dydx-from-ethereum-to-dydx-chain/migration-and-bridge-overview/how-to-bridge-guide.md)
+  * [How to Bridge Guide](https://www.dydx.foundation/how-to-bridge/overview)
 * [📏 wethDYDX and wethDYDX Smart Contract](migration-of-dydx-from-ethereum-to-dydx-chain/wethdydx-and-wethdydx-smart-contract.md)
 * [🏛️ GovernanceStrategyV2 Smart Contract](migration-of-dydx-from-ethereum-to-dydx-chain/governancestrategyv2-smart-contract.md)
 * [🌉 TreasuryBridge Smart Contract](migration-of-dydx-from-ethereum-to-dydx-chain/treasurybridge-smart-contract.md)

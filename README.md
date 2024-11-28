@@ -28,9 +28,7 @@ DYDX, the dYdX Chain's L1 token, serves three key purposes: Staking, Security, a
 
 Learn more about dYdX Unlimited.
 
-{% content-ref url="https://app.gitbook.com/o/-MeNgGQU0ucT2xo4s8-T/s/7eKRye9zrZIr1Pp3Q3Mu/" %}
-[dYdX Unlimited](https://app.gitbook.com/o/-MeNgGQU0ucT2xo4s8-T/s/7eKRye9zrZIr1Pp3Q3Mu/)
-{% endcontent-ref %}
+{% embed url="https://docs.dydx.community/dydx-unlimited" %}
 
 ## Token Migration
 
@@ -52,8 +50,12 @@ Learn more about the DYDX token migration from Ethereum to the dYdX Chain:
 [x-bridge-module.md](dydx-dydx-chain/x-bridge-module.md)
 {% endcontent-ref %}
 
-## Guides
+## How to Bridge Guide
 
-<table data-view="cards"><thead><tr><th></th><th></th><th></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td></td><td></td><td>How to Stake</td><td><a href=".gitbook/assets/How to Stake.png">How to Stake.png</a></td><td><a href="https://www.dydx.foundation/how-to-stake/overview">https://www.dydx.foundation/how-to-stake/overview</a></td></tr><tr><td></td><td></td><td>How to Claim Staking Rewards</td><td><a href=".gitbook/assets/How to Claim.png">How to Claim.png</a></td><td><a href="https://www.dydx.foundation/how-to-claim">https://www.dydx.foundation/how-to-claim</a></td></tr><tr><td></td><td></td><td>How to Vote</td><td><a href=".gitbook/assets/How to Vote.png">How to Vote.png</a></td><td><a href="https://www.dydx.foundation/how-to-vote/overview">https://www.dydx.foundation/how-to-vote/overview</a></td></tr></tbody></table>
+{% embed url="https://www.dydx.foundation/how-to-bridge/overview" %}
+
+
+
+
 
 \*\*\* Last Updated as of November, 2024.
