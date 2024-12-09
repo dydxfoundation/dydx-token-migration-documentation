@@ -4,6 +4,7 @@
 
 * [🤝 Introduction](README.md)
 * [📄 Legal Disclaimers](start-here/legal-disclaimers.md)
+* [❕ Cessation of Support for the wethDYDX Smart Contract](start-here/cessation-of-support-for-the-wethdydx-smart-contract.md)
 
 ## Migration of DYDX from Ethereum to dYdX Chain
 
