@@ -1,5 +1,6 @@
 ---
 description: Overview of the dYdX Chain and the DYDX token.
+hidden: true
 ---
 
 # 🤝 Introduction

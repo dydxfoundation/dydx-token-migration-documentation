@@ -1,10 +1,10 @@
 # Table of contents
 
-## START HERE
+## DYDX Token Migration
 
 * [🤝 Introduction](README.md)
-* [📄 Legal Disclaimers](start-here/legal-disclaimers.md)
-* [❕ Cessation of Support for the wethDYDX Smart Contract](start-here/cessation-of-support-for-the-wethdydx-smart-contract.md)
+* [❕ Cessation of Support for the wethDYDX Smart Contract](dydx-token-migration/cessation-of-support-for-the-wethdydx-smart-contract.md)
+* [📄 Legal Disclaimers](dydx-token-migration/legal-disclaimers.md)
 
 ## Migration of DYDX from Ethereum to dYdX Chain
 
