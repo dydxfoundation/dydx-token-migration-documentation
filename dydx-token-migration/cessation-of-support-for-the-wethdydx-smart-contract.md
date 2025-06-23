@@ -6,7 +6,7 @@ description: An overview of the cessation of support for the wethDYDX smart cont
 
 <figure><img src="../.gitbook/assets/Cover from Figma.png" alt=""><figcaption></figcaption></figure>
 
-On December 7, 2024, the dYdX Community [voted](https://www.mintscan.io/dydx/proposals/189) to cease support for the wethDYDX smart contract (the Bridge) by June, 2025. After the 6 month notice period, the dYdX Community [voted](https://www.mintscan.io/dydx/proposals/254) to Cease Support for the wethDYDX Smart Contract ("the Bridge") on June 13, 2025. As a result of the discontinuation of support of the wethDYDX Smart Contract on the dYdX Chain, dYdX Chain validators no longer recognize transactions sent via the Bridge.&#x20;
+On December 7, 2024, the dYdX Community [voted](https://www.mintscan.io/dydx/proposals/189) to cease dYdX Chain support for the wethDYDX smart contract (the “Bridge”) by June 2025. After the 6-month period, the dYdX Community has [voted](https://www.mintscan.io/dydx/proposals/254) to effectively cease support for the Bridge on the dYdX Chain on June 13, 2025. As a result of the discontinuation of support of the wethDYDX Smart Contract on the dYdX Chain, dYdX Chain validators no longer recognize interactions with the Bridge.&#x20;
 
 As a result, ethDYDX holders are no longer be able to convert their ethDYDX tokens to DYDX on the dYdX Chain. ethDYDX tokens that are sent to and locked in the wethDYDX Smart Contract will not be credited on the respective dYdX Chain address.
 
